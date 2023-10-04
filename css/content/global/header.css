@@ -1,0 +1,48 @@
+header {
+  padding: 1rem 2rem 0 2rem;
+}
+
+header .container-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+header .container-header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .container-header .logo p {
+  font-size: 2rem;
+  color: #fff;
+  font-weight: 700;
+}
+
+header .container-header .logo p::after {
+  content: ".dev";
+  font-weight: 700;
+  background: -webkit-linear-gradient(right, #8b32e3, #4a18ec);
+  background: -o-linear-gradient(right, #8b32e3, #4a18ec);
+  background: -moz-linear-gradient(right, #8b32e3, #4a18ec);
+  background: linear-gradient(to right, #8b32e3, #4a18ec);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav ul li {
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 8px;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
