@@ -1,0 +1,106 @@
+.about {
+  padding: 0 2rem;
+}
+
+.about .container-about {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 4rem;
+}
+
+.about .container-about .text-about-me img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.about .container-about .text-about-me h1 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  color: #fff;
+}
+
+.about .container-about .text-about-me p {
+  font-size: 1.3rem;
+  color: #a1a1aa;
+  width: 70ch;
+  line-height: 2rem;
+}
+
+.about .container-about .stack {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: rgba(12, 12, 14, .53);
+  padding: 5rem;
+  width: 70ch;
+}
+
+.about .container-about .stack-info .stack .main-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about .container-about .stack-info .stack .main-stack span {
+  font-weight: 200;
+  color: #dfdfdf;
+  font-size: 14px;
+}
+
+.about .container-about .stack-info .stack .main-stack p {
+  color: #fff;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  width: 20ch;
+}
+
+.about .container-about .stack-info .stack .tech-images {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.about .container-about .stack .tech-images img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.about .container-about .stack-info .stack-icon .icon-social {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 3rem;
+  border-bottom: 1px solid #3f3f4666;
+  padding-bottom: 2rem;
+}
+
+.about .container-about .stack-info .stack-icon .icon-social a,
+.about .container-about .stack-info .stack-icon .icon-email a {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.about .container-about .stack-info .stack-icon .icon-social a svg,
+.about .container-about .stack-info .stack-icon .icon-email a svg {
+  width: 22px;
+  height: 22px;
+}
+
+.about .container-about .stack-info .stack-icon .icon-social a span,
+.about .container-about .stack-info .stack-icon .icon-email a span {
+  font-weight: 500;
+  line-height: 1.5rem;
+  font-size: 1.25rem;
+  color: #e4e4e7;
+}
+
+.about .container-about .stack-info .stack-icon .icon-email {
+  margin-top: 2rem;
+}

@@ -5,5 +5,6 @@
 /* Global */
 @import "./content/global/header.css";
 
-/* About */
-@import "./content/about/about.css";
+/* Contet */
+@import "./content/presentation/about.css";
+@import "./content/presentation/project.css";

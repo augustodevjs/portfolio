@@ -1,44 +1,33 @@
-header {
-  padding: 1rem 2rem 0 2rem;
-}
-
-header .container-header {
+.container-header {
+  gap: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  padding: 1rem 2rem 0 2rem;
 }
 
-header .container-header .logo {
-  display: flex;
-  align-items: center;
-}
-
-header .container-header .logo p {
-  font-size: 2rem;
+.container-header h3 {
   color: #fff;
+  font-size: 2rem;
   font-weight: 700;
 }
 
-header .container-header .logo p::after {
+.container-header h3::after {
   content: ".dev";
   font-weight: 700;
-  background: -webkit-linear-gradient(right, #8b32e3, #4a18ec);
-  background: -o-linear-gradient(right, #8b32e3, #4a18ec);
-  background: -moz-linear-gradient(right, #8b32e3, #4a18ec);
   background: linear-gradient(to right, #8b32e3, #4a18ec);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent
 }
 
-header nav ul {
+.container-header nav ul {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
-header nav ul li {
+.container-header nav ul li {
   color: #fff;
   align-items: center;
   justify-content: center;
