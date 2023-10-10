@@ -1,6 +1,6 @@
 .recent-projects {
     margin-top: 4rem;
-    padding: 2rem 4rem 0 4rem;
+    padding: 2rem 6rem 0 6rem;
 }
 
 .recent-projects .recent-projects-container .header-projects {
@@ -23,5 +23,54 @@
 .recent-projects .recent-projects-container .recent-projects-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card {
+    opacity: 1;
+    border: 1px solid #6c6c77;
+    border-radius: 10px;
+    padding: 0.6rem;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card:hover {
+    transition: 0.5s all ;
+    background: rgba(0, 0, 0, 0) radial-gradient(650px at 302px 304.4px, rgba(255, 255, 255, 0.1), transparent 80%) repeat scroll 0% 0%;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card img {
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card h3 {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 2.25rem;
+    color: #a1a1aa;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    font-size: 1.25rem;
+    color: #808082;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card  .project-icons {
+    display: flex;
+    gap: 0.75rem;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card  .project-icons svg {
+    width: 25px;
+    height: 25px;
 }
