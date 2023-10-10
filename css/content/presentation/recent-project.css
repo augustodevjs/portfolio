@@ -1,0 +1,27 @@
+.recent-projects {
+    margin-top: 4rem;
+    padding: 2rem 4rem 0 4rem;
+}
+
+.recent-projects .recent-projects-container .header-projects {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.recent-projects .recent-projects-container .header-projects h3 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.recent-projects .recent-projects-container .header-projects p {
+    font-size: 1.25rem;
+    color: #a1a1aa;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}

@@ -1,9 +1,15 @@
 .container-header {
   gap: 1rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  padding: 1rem 2rem 0 2rem;
+  padding: 2rem 4rem 0 4rem;
+}
+
+.container-header .logo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .container-header h3 {
@@ -12,10 +18,16 @@
   font-weight: 700;
 }
 
+.container-header img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+}
+
 .container-header h3::after {
   content: ".dev";
   font-weight: 700;
-  background: linear-gradient(to right, #8b32e3, #4a18ec);
+  background: linear-gradient(to right, rgb(40, 142, 128), rgb(45 212 191/1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent
 }
@@ -32,6 +44,11 @@
   align-items: center;
   justify-content: center;
   padding: 8px 8px;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 400;
+  transition: 0.3s all color;
+}
+
+.container-header nav ul li:hover {
+  color: rgb(45 212 191/1);
 }
