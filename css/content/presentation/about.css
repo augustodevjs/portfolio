@@ -1,5 +1,5 @@
 .about {
-  padding: 0 6rem;
+  padding: 0 8rem;
 }
 
 .about .container-about {
@@ -60,7 +60,6 @@
   width: 20ch;
 }
 
-
 .about .container-about .stack-info .stack .tech-images {
   margin-top: 1rem;
   display: flex;
@@ -71,7 +70,6 @@
   width: 4rem;
   height: 4rem;
 }
-
 
 .about .container-about .stack-info .stack-icon .icon-social {
   display: flex;
@@ -107,14 +105,17 @@
   margin-top: 2rem;
 }
 
-.about .container-about .stack-info .stack-icon .icon-social a span, .about .container-about .stack-info .stack-icon .icon-email a span {
-  transition: 0.3s all color;
+.about .container-about .stack-info .stack-icon .icon-social a span,
+.about .container-about .stack-info .stack-icon .icon-email a span {
+  transition: 0.3s all;
 }
 
-.about .container-about .stack-info .stack-icon .icon-social a:hover span, .about .container-about .stack-info .stack-icon .icon-email a:hover span {
+.about .container-about .stack-info .stack-icon .icon-social a:hover span,
+.about .container-about .stack-info .stack-icon .icon-email a:hover span {
   color: rgb(45 212 191/1);
 }
 
-.about .container-about .stack-info .stack-icon .icon-social a:hover svg, .about .container-about .stack-info .stack-icon .icon-email a:hover svg {
+.about .container-about .stack-info .stack-icon .icon-social a:hover svg,
+.about .container-about .stack-info .stack-icon .icon-email a:hover svg {
   fill: rgb(45 212 191/1);
 }

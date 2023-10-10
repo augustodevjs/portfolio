@@ -4,6 +4,7 @@
 
 /* Global */
 @import "./content/global/header.css";
+@import "./content/global/footer.css";
 
 /* Contet */
 @import "./content/presentation/about.css";

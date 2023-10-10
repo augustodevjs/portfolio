@@ -1,0 +1,35 @@
+footer {
+  border-top: 1px solid #a1a1aa2f;
+  padding: 2rem 8rem 0 8rem;
+  margin-top: 3rem;
+}
+
+footer .container-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .container-footer nav ul {
+  display: flex;
+  align-items: center;
+}
+
+footer .container-footer nav ul li {
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 8px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  transition: 0.3s all;
+}
+
+footer .container-footer nav ul li:hover {
+  color: rgb(45 212 191/1);
+}
+
+footer .container-footer p {
+  font-size: 1.1rem;
+  color: rgb(113 113 122/1);
+}
