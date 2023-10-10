@@ -4,7 +4,7 @@
 
 .about .container-about {
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: center;
   gap: 5rem;
   margin-top: 4rem;
@@ -71,51 +71,21 @@
   height: 4rem;
 }
 
-.about .container-about .stack-info .stack-icon .icon-social {
+.about .container-about .text-about-me .about-icons {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  margin-top: 3rem;
-  border-bottom: 1px solid #3f3f4666;
-  padding-bottom: 2rem;
-}
-
-.about .container-about .stack-info .stack-icon .icon-social a,
-.about .container-about .stack-info .stack-icon .icon-email a {
-  display: flex;
-  align-items: center;
   gap: 1rem;
+  margin-top: 2rem;
 }
 
-.about .container-about .stack-info .stack-icon .icon-social a svg,
-.about .container-about .stack-info .stack-icon .icon-email a svg {
+.about .container-about .text-about-me .about-icons a {
+  transition: 0.3s all;
+}
+
+.about .container-about .text-about-me .about-icons a svg {
   width: 22px;
   height: 22px;
 }
 
-.about .container-about .stack-info .stack-icon .icon-social a span,
-.about .container-about .stack-info .stack-icon .icon-email a span {
-  font-weight: 500;
-  line-height: 1.5rem;
-  font-size: 1.25rem;
-  color: #e4e4e7;
-}
-
-.about .container-about .stack-info .stack-icon .icon-email {
-  margin-top: 2rem;
-}
-
-.about .container-about .stack-info .stack-icon .icon-social a span,
-.about .container-about .stack-info .stack-icon .icon-email a span {
-  transition: 0.3s all;
-}
-
-.about .container-about .stack-info .stack-icon .icon-social a:hover span,
-.about .container-about .stack-info .stack-icon .icon-email a:hover span {
-  color: rgb(45 212 191/1);
-}
-
-.about .container-about .stack-info .stack-icon .icon-social a:hover svg,
-.about .container-about .stack-info .stack-icon .icon-email a:hover svg {
+.about .container-about .text-about-me .about-icons a:hover svg {
   fill: rgb(45 212 191/1);
 }

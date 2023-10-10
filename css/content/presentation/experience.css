@@ -1,0 +1,22 @@
+.experience {
+  padding: 3rem 8rem 0 8rem;
+}
+
+.experience .container-experience {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.experience .container-experience .experience-introduce h3 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.experience .container-experience .experience-introduce p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #a1a1aa;
+  margin-bottom: 1.75rem;
+  width: 60ch;
+}
