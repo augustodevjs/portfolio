@@ -16,7 +16,7 @@
   font-size: 1.25rem;
   color: #a1a1aa;
   margin-bottom: 1.75rem;
-  width: 60ch;
+  width: 70ch;
 }
 
 .experience .container-experience .experience-content {
@@ -25,7 +25,7 @@
 }
 
 .experience .container-experience .experience-content {
-  border-left: 1px solid rgba(63,63,70,.4);
+  border-left: 1px solid rgba(63, 63, 70, .4);
   padding-left: 2rem;
 }
 
@@ -42,20 +42,26 @@
 }
 
 .experience .container-experience .experience-content .experience-content-info .experience-info h3 {
-  font-size: 1.5rem;
-  color:rgb(107 114 128/1);
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #a1a1aa;
 }
 
 .experience .container-experience .experience-content .experience-content-info .experience-info .job {
   font-size: 1.75rem;
-  color: rgb(209 213 219/1);
+  color: #fff;
 }
 
 .experience .container-experience .experience-content .experience-content-info .experience-info .time-experience {
-  color: rgb(107 114 128/1);
+  color: #929296;
+  margin-bottom: 0.5rem;
 }
 
 .experience .container-experience .experience-content .experience-content-info .experience-info ul li {
- color: rgb(156 163 175/1); 
- width: 100ch;
+  color: #a1a1aa;
+  width: 100ch;
+  font-size: 1.15rem;
+  list-style: initial;
+  line-height: 2rem;
+  margin-left: 1.25rem;
 }

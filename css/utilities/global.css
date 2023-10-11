@@ -11,7 +11,6 @@ html {
 }
 
 body {
-  height: 100vh;
   overflow-x: hidden;
   background-color: #000;
 }
@@ -53,5 +52,4 @@ img {
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  height: 200vh;
 }

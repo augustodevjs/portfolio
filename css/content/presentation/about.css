@@ -35,6 +35,7 @@
   flex-direction: column;
   justify-content: space-around;
   background-color: rgba(12, 12, 14, .53);
+  border-radius: 5px;
   padding: 5rem;
   width: 70ch;
 }
