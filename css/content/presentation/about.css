@@ -52,7 +52,6 @@
   font-size: 14px;
 }
 
-
 .about .container-about .stack-info .stack .main-stack p {
   color: #fff;
   text-align: center;
@@ -78,7 +77,7 @@
   margin-top: 2rem;
 }
 
-.about .container-about .text-about-me .about-icons a {
+.about .container-about .text-about-me .about-icons a svg {
   transition: 0.3s all;
 }
 
@@ -89,4 +88,53 @@
 
 .about .container-about .text-about-me .about-icons a:hover svg {
   fill: rgb(45 212 191/1);
+}
+
+[data-anime="linkedin"] {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: scale(0.3);
+}
+
+[data-anime="instagram"] {
+  transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
+  transform: scale(0.3);
+}
+
+[data-anime="github"] {
+  transition: opacity 0.9s ease-in-out, transform 0.9s ease-in-out;
+  transform: scale(0.3);
+}
+
+[data-anime="email"] {
+  transition: opacity 1.2s ease-in-out, transform 1.2s ease-in-out;
+  transform: scale(0.3);
+}
+
+@media(max-width: 1215px) {
+  .about {
+    padding: 0 3rem;
+  }
+}
+
+@media(max-width: 1040px) {
+  .about .container-about {
+    gap: 3rem;
+  }
+}
+
+@media(max-width: 940px) {
+  .about .container-about {
+    flex-direction: column;
+  }
+
+  .about .container-about .stack-info .stack,
+  .about .container-about .stack-info {
+    width: 100%;
+  }
+}
+
+@media(max-width: 380px) {
+  .about .container-about .stack-info .stack .main-stack p {
+    width: 100%;
+  }
 }

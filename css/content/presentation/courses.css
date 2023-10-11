@@ -1,5 +1,5 @@
 .courses {
-  padding: 3rem 8rem 1rem 8rem;
+  padding: 3rem 8rem 2rem 8rem;
 }
 
 .courses .container-courses h3 {
@@ -28,4 +28,26 @@
 .courses .container-courses .card-content .card-course .card-info ul li {
   font-size: 1rem;
   color: #A1A1AA;
+}
+
+@media(max-width: 1215px) {
+  .courses {
+    padding: 3rem 3rem 1rem 3rem;
+  }
+}
+
+@media(max-width: 1000px) {
+  .courses .container-courses .card-content {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .courses .container-courses .card-content img {
+    height: 100%;
+  }
+}
+
+@media(max-width: 600px) {
+  .courses .container-courses .card-content {
+    grid-template-columns: 1fr;
+  }
 }

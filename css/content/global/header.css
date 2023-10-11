@@ -52,3 +52,9 @@
 .container-header nav ul li:hover {
   color: rgb(45 212 191/1);
 }
+
+@media(max-width: 1215px) {
+  .container-header {
+    padding: 2rem 3rem 0 3rem;
+  }
+}

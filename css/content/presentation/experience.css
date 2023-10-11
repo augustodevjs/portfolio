@@ -1,5 +1,5 @@
 .experience {
-  padding: 3rem 8rem 0 8rem;
+  padding: 3rem 8rem 2rem 8rem;
 }
 
 .experience .container-experience .experience-introduce {
@@ -44,7 +44,7 @@
 .experience .container-experience .experience-content .experience-content-info .experience-info h3 {
   font-size: 1.25rem;
   font-weight: 300;
-  color: #a1a1aa;
+  color: #b2b2b8;
 }
 
 .experience .container-experience .experience-content .experience-content-info .experience-info .job {
@@ -64,4 +64,40 @@
   list-style: initial;
   line-height: 2rem;
   margin-left: 1.25rem;
+}
+
+@media(max-width: 1215px) {
+  .experience {
+    padding: 3rem 3rem 0 3rem;
+  }
+}
+
+@media(max-width: 950px) {
+  .experience .container-experience .experience-content .experience-content-info .experience-info ul li {
+    width: 100%;
+  }
+}
+
+@media(max-width: 750px) {
+  .experience .container-experience .experience-content {
+    grid-template-columns: 120px 1fr;
+  }
+}
+
+@media(max-width: 680px) {
+  .experience .container-experience .experience-content {
+    padding-left: 0;
+    border-left: none;
+    grid-template-columns: 1fr;
+  }
+
+  .experience .container-experience .experience-content .experience-journey {
+    display: none;
+  }
+}
+
+@media(max-width: 580px) {
+  .experience .container-experience .experience-introduce p {
+    width: 100%;
+  }
 }
