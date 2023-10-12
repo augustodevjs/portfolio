@@ -31,7 +31,7 @@ export default function animation() {
 
   const resizeAnimation = throttle(() => {
     animeScroll();
-  }, 300);
+  }, 200);
 
   if (targets.length) {
     window.addEventListener('load', initAnimation);

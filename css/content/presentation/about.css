@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   gap: 5rem;
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 .about .container-about .text-about-me img {
@@ -122,9 +122,16 @@
   }
 }
 
+@media(max-width: 505px) {
+  .about .container-about {
+    margin-top: 0rem !important;
+  }
+}
+
 @media(max-width: 940px) {
   .about .container-about {
     flex-direction: column;
+    margin-top: 2rem;
   }
 
   .about .container-about .stack-info .stack,
