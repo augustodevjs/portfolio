@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <meta name="description" content="Meu nome é João Augusto e eu sou um desenvolvedor Full Stack especializado em React e .NET">
-    <meta name="theme-color">
+    <meta
+      name="description"
+      content="Meu nome é João Augusto e eu sou um desenvolvedor Full Stack especializado em React e .NET"
+    />
+    <meta name="theme-color" />
 
     <link rel="preload" href="./css/styles.css" as="style" />
     <link rel="stylesheet" href="./css/styles.css" />
@@ -25,23 +28,20 @@
       <header>
         <div class="container header">
           <div class="nav-bar">
-            <div class="logo">
-              <a href="home.html" data-anime="top">
-                <img src="./assets/images/profile.png" alt="profile" />
-              </a>
-
-              <p data-anime="top">jaugusto</p>
-            </div>
+            <a href="home.html" class="logo">
+              <img src="./assets/images/profile.png" alt="profile" />
+              <p>jaugusto</p>
+            </a>
 
             <div class="menu-right">
-              <nav data-anime="top">
+              <nav>
                 <ul>
                   <li><a href="sobre.html">Sobre</a></li>
                   <li><a href="projetos.html">Projetos</a></li>
                   <li><a href="contato.html">Contato</a></li>
                 </ul>
               </nav>
-              <div class="menu-align-end" data-anime="top">
+              <div class="menu-align-end">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                   <path
                     d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
@@ -52,13 +52,11 @@
 
             <div class="menu">
               <div class="menu-navbar">
-                <div class="social-media">
-                  <a href="home.html">
-                    <img src="./assets/images/profile.png" alt="profile" />
-                  </a>
+                <a href="home.html" class="social-media">
+                  <img src="./assets/images/profile.png" alt="profile" />
 
                   <p>jaugusto</p>
-                </div>
+                </a>
                 <div class="close-menu white">
                   <svg
                     class="menu-align-justify"
@@ -74,7 +72,6 @@
 
                 <div class="menu-mobile-hamburguer">
                   <ul class="menu-mobile-header">
-                    <li><a href="/home.html">Home</a></li>
                     <li><a href="/sobre.html">Sobre</a></li>
                     <li><a href="/projetos.html">Projetos</a></li>
                     <li><a href="/contato.html">Contato</a></li>
@@ -170,11 +167,11 @@
         </div>
       </header>
 
-      <section class="about">
-        <div class="container-about">
-          <div class="text-about-me">
-            <h1 data-anime="left">Olá, me chamo João Augusto.</h1>
-            <p data-anime="left">
+      <section class="info">
+        <div class="container-info">
+          <div class="text-info-me">
+            <h1>Olá, me chamo João Augusto.</h1>
+            <p>
               Desenvolvedor de Software com 2 anos de experiência na criação de
               softwares de alto impacto voltados para a comunidade universitária
               do IFCE. Possuo especialização em integrar de forma eficiente os
@@ -183,9 +180,8 @@
               acessíveis.
             </p>
 
-            <div class="about-icons">
+            <div class="info-icons">
               <a
-                data-anime="linkedin"
                 href="https://www.linkedin.com/in/joaoaugustodevjs/"
                 aria-label="personal linkedin"
               >
@@ -206,7 +202,6 @@
               </a>
 
               <a
-                data-anime="instagram"
                 href="https://www.instagram.com/joao_augusto_001/"
                 aria-label="personal instagram"
               >
@@ -227,7 +222,6 @@
               </a>
 
               <a
-                data-anime="github"
                 href="https://github.com/augustodevjs"
                 aria-label="personal github"
               >
@@ -248,7 +242,6 @@
               </a>
 
               <a
-                data-anime="email"
                 href="mailto:jaugusto.dev@gmail.com"
                 aria-label="personal email"
               >
@@ -270,7 +263,7 @@
             </div>
           </div>
 
-          <div class="stack-info" data-anime="right">
+          <div class="stack-info">
             <div class="stack">
               <div class="main-stack">
                 <span>Stack Principal</span>
@@ -278,8 +271,8 @@
               </div>
 
               <div class="tech-images">
-                <img src="./assets/images/dotnet.png" alt="" />
-                <img src="./assets/icon/react-js-icon.svg" alt="" />
+                <img src="./assets/images/dotnet.png" alt="dotnet" />
+                <img src="./assets/icon/react-js-icon.svg" alt="react" />
               </div>
             </div>
           </div>
@@ -288,21 +281,17 @@
 
       <section class="recent-projects">
         <div class="recent-projects-container">
-          <div class="header-projects" data-anime="left">
+          <div class="header-projects">
             <h2>Atuação em projetos reais:</h2>
           </div>
 
           <div class="recent-projects-content">
             <div class="recent-project-card">
-              <img
-                src="./assets/images/sysra-landing.png"
-                alt=""
-                data-anime="left"
-              />
+              <img src="./assets/images/sysra-landing.png" alt="sysra" />
 
               <div class="content-project">
-                <h3 data-anime="top">Sysra</h3>
-                <p data-anime="top">
+                <h3>Sysra</h3>
+                <p>
                   Sysra é uma plataforma desenvolvida pelo Núcleo de
                   Desenvolvimento de Software do IFCE Maracanáu, que visa de
                   forma inteligente resolver as demandas de alimentos em
@@ -313,22 +302,21 @@
                 </p>
 
                 <div class="stacks">
-                  <span data-anime="sysra-react">React.js</span>
-                  <span data-anime="sysra-typescript">Typescript</span>
-                  <span data-anime="sysra-javascript">Javascript</span>
-                  <span data-anime="sysra-bootstrap">Bootstrap</span>
-                  <span data-anime="sysra-react-query">React Query</span>
-                  <span data-anime="sysra-nxworkspace">Nx Workspace</span>
-                  <span data-anime="sysra-net">.NET 6</span>
-                  <span data-anime="sysra-entity">Entity Framework</span>
-                  <span data-anime="sysra-automapper">AutoMapper</span>
-                  <span data-anime="sysra-mysql">MySql</span>
+                  <span>React.js</span>
+                  <span>Typescript</span>
+                  <span>Javascript</span>
+                  <span>Bootstrap</span>
+                  <span>React Query</span>
+                  <span>Nx Workspace</span>
+                  <span>.NET 6</span>
+                  <span>Entity Framework</span>
+                  <span>AutoMapper</span>
+                  <span>MySql</span>
                 </div>
 
                 <a
                   target="_blank"
-                  href="https://sysra-h.maracanau.ifce.edu.br/login"
-                  data-anime="top"
+                  href="https://sysra-h.maracanau.ifce.edu.br/landing-page"
                   >Ver o projeto
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <path
@@ -340,15 +328,11 @@
             </div>
 
             <div class="recent-project-card">
-              <img
-                data-anime="left"
-                src="./assets/images/intranet-new.png"
-                alt=""
-              />
+              <img src="./assets/images/intranet-new.png" alt="intranet" />
 
               <div class="content-project">
-                <h3 data-anime="top">Intranet</h3>
-                <p data-anime="top">
+                <h3>Intranet</h3>
+                <p>
                   A Intranet é um ERP desenvolvido pelo Núcleo de
                   Desenvolvimento de Software do IFCE Maracanaú. Seu principal
                   objetivo é facilitar os processos administrativos do campus,
@@ -360,20 +344,17 @@
                 </p>
 
                 <div class="stacks">
-                  <span data-anime="intranet-react">React.js</span>
-                  <span data-anime="intranet-typescript">Typescript</span>
-                  <span data-anime="intranet-javascript">Javascript</span>
-                  <span data-anime="intranet-styled">Styled Components</span>
-                  <span data-anime="intranet-bootstrap">Bootstrap</span>
-                  <span data-anime="intranet-react-query">React Query</span>
-                  <span data-anime="intranet-react-hook-form"
-                    >React Hook Form</span
-                  >
-                  <span data-anime="intranet-atomic-design">Atomic Design</span>
+                  <span>React.js</span>
+                  <span>Typescript</span>
+                  <span>Javascript</span>
+                  <span>Styled Components</span>
+                  <span>Bootstrap</span>
+                  <span>React Query</span>
+                  <span>React Hook Form</span>
+                  <span>Atomic Design</span>
                 </div>
 
                 <a
-                  data-anime="top"
                   target="_blank"
                   href="https://intranet.maracanau.ifce.edu.br/login"
                 >
@@ -392,8 +373,8 @@
 
       <section class="experience">
         <div class="container-experience">
-          <div data-anime="left" class="experience-introduce">
-            <h2>Experiência Profissional</h3>
+          <div class="experience-introduce">
+            <h2>Experiência Profissional</h2>
             <p>
               Estou sempre aberto a novos desafios e projetos emocionantes.
               Vamos trabalhar juntos para criar soluções incríveis para sua
@@ -402,12 +383,12 @@
           </div>
 
           <div class="experience-content">
-            <div data-anime="top" class="experience-journey">
+            <div class="experience-journey">
               <p>Trajetória</p>
             </div>
 
             <div class="experience-content-info">
-              <div data-anime="left" class="experience-info">
+              <div class="experience-info">
                 <h3>IFCE Maracanaú</h3>
                 <p class="job">Full Stack Developer</p>
                 <p class="time-experience">abr 2022 • O momento</p>
@@ -446,7 +427,7 @@
                 </ul>
               </div>
 
-              <div data-anime="left" class="experience-info">
+              <div class="experience-info">
                 <h3>NerdWeb</h3>
                 <p class="job">Front End Developer</p>
                 <p class="time-experience">jul 2023 • O momento</p>
@@ -469,7 +450,7 @@
                 </ul>
               </div>
 
-              <div data-anime="left" class="experience-info">
+              <div class="experience-info">
                 <h3>Polo de Inovação</h3>
                 <p class="job">Front End Developer</p>
                 <p class="time-experience">jun 2022 • set 2022</p>
@@ -497,26 +478,53 @@
 
       <section class="courses">
         <div class="container-courses">
-          <h2 data-anime="top">Cursos concluídos</h2>
+          <h2>Cursos concluídos</h2>
 
-          <div data-anime="top" class="card-content">
-            <div class="card-course">
-              <img src="./assets/images/react-udemy.jpg" alt="" />
+          <div class="card-content">
+            <div
+              class="card-course"
+              onclick="window.open('https:www.corno.com.br')"
+            >
+              <img
+                src="./assets/images/react-udemy.jpg"
+                alt="react"
+                onclick="window.open('https://www.udemy.com/certificate/UC-9f29cd79-1ad4-496a-b777-9d0e8fc1ba26/')"
+              />
             </div>
             <div class="card-course">
-              <img src="./assets/images/nextjs-udemy.jpg" alt="" />
+              <img
+                src="./assets/images/nextjs-udemy.jpg"
+                alt="nextjs"
+                onclick="window.open('https://www.udemy.com/certificate/UC-2bfa02db-585d-409a-833e-fcd6533485d1/')"
+              />
             </div>
             <div class="card-course">
-              <img src="./assets/images/typescript.jpg" alt="" />
+              <img
+                src="./assets/images/typescript.jpg"
+                alt="typescript"
+                onclick="window.open('https://alunos.b7web.com.br/media/certificates/certificado_8316141.jpg')"
+              />
             </div>
             <div class="card-course">
-              <img src="./assets/images/javascript-b7web.jpg" alt="" />
+              <img
+                src="./assets/images/javascript-b7web.jpg"
+                onclick="window.open('https://alunos.b7web.com.br/media/certificates/certificado_2677777.jpg')"
+                alt="javascript"
+              />
             </div>
             <div class="card-course">
-              <img src="./assets/images/dev.io-aspnet.png" alt="" />
+              <img
+                src="./assets/images/dev.io-aspnet.png"
+                onclick="window.open('https://desenvolvedor.io/certificado/5539a1c8-2ade-4dce-a744-28c403ce6bc5')"
+                alt="aspnet"
+              />
             </div>
             <div class="card-course">
-              <img src="./assets/images/dev.io-entity.png" alt="" />
+              <img
+                src="./assets/images/dev.io-entity.png"
+                alt="entity"
+                onclick="window.open('https://desenvolvedor.io/certificado/78167ae8-a415-4baf-a247-b39ff8f616a6')"
+              />
             </div>
           </div>
         </div>
@@ -526,9 +534,10 @@
         <div class="container-footer">
           <nav>
             <ul>
-              <li><a href="">Sobre</a></li>
-              <li><a href="">Projetos</a></li>
-              <li><a href="">Contato</a></li>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="projetos.html">Projetos</a></li>
+              <li><a href="contato.html">Contato</a></li>
             </ul>
           </nav>
 

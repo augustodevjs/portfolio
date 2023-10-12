@@ -20,6 +20,19 @@
   border-radius: 5px;
 }
 
+.courses .container-courses .card-content .card-course img {
+  cursor: pointer;
+  transition: 0.3s all ease;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.courses .container-courses .card-content .card-course img:hover {
+  transform: scale(1.05);
+}
+
 .courses .container-courses .card-content .card-course .card-info h4 {
   color: #fff;
   font-size: 1.5rem;

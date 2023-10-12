@@ -4,10 +4,9 @@
 /* Global */
 @import "./content/global/header.css";
 @import "./content/global/footer.css";
-@import "./content/global/animation.css";
 
-/* Contet */
-@import "./content/presentation/about.css";
-@import "./content/presentation/courses.css";
-@import "./content/presentation/experience.css";
-@import "./content/presentation/recent-project.css";
+/* Home */
+@import "./content/home/info.css";
+@import "./content/home/courses.css";
+@import "./content/home/experience.css";
+@import "./content/home/recent-project.css";

@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <meta
+      name="description"
+      content="Meu nome é João Augusto e eu sou um desenvolvedor Full Stack especializado em React e .NET"
+    />
+    <meta name="theme-color" />
+
     <link rel="preload" href="./css/styles.css" as="style" />
     <link rel="stylesheet" href="./css/styles.css" />
 
@@ -22,23 +28,20 @@
       <header>
         <div class="container header">
           <div class="nav-bar">
-            <div class="logo">
-              <a href="home.html" data-anime="top">
-                <img src="./assets/images/profile.jpg" alt="profile" />
-              </a>
-
-              <p data-anime="top">jaugusto</p>
-            </div>
+            <a href="home.html" class="logo">
+              <img src="./assets/images/profile.png" alt="profile" />
+              <p>jaugusto</p>
+            </a>
 
             <div class="menu-right">
-              <nav data-anime="top">
+              <nav>
                 <ul>
-                  <li><a href="about.html">Sobre</a></li>
+                  <li><a href="sobre.html">Sobre</a></li>
                   <li><a href="projetos.html">Projetos</a></li>
                   <li><a href="contato.html">Contato</a></li>
                 </ul>
               </nav>
-              <div class="menu-align-end" data-anime="top">
+              <div class="menu-align-end">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                   <path
                     d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
@@ -49,13 +52,11 @@
 
             <div class="menu">
               <div class="menu-navbar">
-                <div class="social-media">
-                  <a href="home.html">
-                    <img src="./assets/images/profile.jpg" alt="profile" />
-                  </a>
+                <a href="home.html" class="social-media">
+                  <img src="./assets/images/profile.png" alt="profile" />
 
                   <p>jaugusto</p>
-                </div>
+                </a>
                 <div class="close-menu white">
                   <svg
                     class="menu-align-justify"
@@ -71,16 +72,18 @@
 
                 <div class="menu-mobile-hamburguer">
                   <ul class="menu-mobile-header">
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="/sobre.html">Sobre</a></li>
+                    <li><a href="/projetos.html">Projetos</a></li>
+                    <li><a href="/contato.html">Contato</a></li>
                   </ul>
 
                   <div class="border"></div>
 
                   <div class="menu-icons">
-                    <a href="https://www.linkedin.com/in/joaoaugustodevjs/">
+                    <a
+                      href="https://www.linkedin.com/in/joaoaugustodevjs/"
+                      aria-label="personal linkedin"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="1em"
@@ -97,7 +100,10 @@
                       </svg>
                     </a>
 
-                    <a href="https://www.instagram.com/joao_augusto_001/">
+                    <a
+                      href="https://www.instagram.com/joao_augusto_001/"
+                      aria-label="personal instagram"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="1em"
@@ -114,7 +120,10 @@
                       </svg>
                     </a>
 
-                    <a href="https://github.com/augustodevjs">
+                    <a
+                      href="https://github.com/augustodevjs"
+                      aria-label="personal github"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="1em"
@@ -131,7 +140,10 @@
                       </svg>
                     </a>
 
-                    <a href="mailto:jaugusto.dev@gmail.com">
+                    <a
+                      href="mailto:jaugusto.dev@gmail.com"
+                      aria-label="personal email"
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="1em"
@@ -159,8 +171,10 @@
         <div class="container-footer">
           <nav>
             <ul>
-              <li><a href="">Projetos</a></li>
-              <li><a href="">Contato</a></li>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="sobre.html">Sobre</a></li>
+              <li><a href="projetos.html">Projetos</a></li>
+              <li><a href="contato.html">Contato</a></li>
             </ul>
           </nav>
 
@@ -168,5 +182,7 @@
         </div>
       </footer>
     </main>
+
+    <script type="module" src="./js/script.js"></script>
   </body>
 </html>
