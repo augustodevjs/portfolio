@@ -2,19 +2,6 @@ export default function animation() {
   const targets = document.querySelectorAll('[data-anime]');
   const animationClass = 'animate';
 
-  const throttle = (func, limit) => {
-    let inThrottle = false;
-    return function (...args) {
-      if (!inThrottle) {
-        func.apply(this, args);
-        inThrottle = true;
-        setTimeout(() => {
-          inThrottle = false;
-        }, limit);
-      }
-    };
-  };
-
   const animeScroll = () => {
     const windowTop = window.scrollY + window.innerHeight;
     targets.forEach((element) => {
@@ -29,9 +16,9 @@ export default function animation() {
     animeScroll();
   };
 
-  const resizeAnimation = throttle(() => {
+  const resizeAnimation = () => {
     animeScroll();
-  }, 200);
+  };
 
   if (targets.length) {
     window.addEventListener('load', initAnimation);
