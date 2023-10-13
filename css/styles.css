@@ -1,5 +1,6 @@
 /* Utilities */
 @import "./utilities/global.css";
+@import "./utilities/animation.css";
 
 /* Global */
 @import "./content/global/header.css";
