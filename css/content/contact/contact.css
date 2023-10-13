@@ -1,0 +1,137 @@
+.contact {
+  padding: 7rem 8rem 5.9rem 8rem;
+}
+
+.contact .container-contact .contact-introduce {
+  margin-bottom: 4rem;
+}
+
+.contact .container-contact .contact-introduce h2 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.contact .container-contact .contact-introduce p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #a1a1aa;
+  margin-bottom: 1.75rem;
+  line-height: 2.25rem;
+  width: 80ch;
+}
+
+.contact .container-contact .contact-content {
+  display: grid;
+  grid-template-columns: 150px 600px;
+}
+
+.contact .container-contact .contact-content {
+  border-left: 1px solid rgba(63, 63, 70, .4);
+  padding-left: 2rem;
+  margin-top: 8rem;
+}
+
+.contact .container-contact .contact-content .contact-me p {
+  font-size: 1.25rem;
+  color: rgb(138, 138, 144);
+  font-weight: 400;
+}
+
+.contact .container-contact .contact-content .contact-schedule {
+  transition: 0.3s all;
+  padding: 2rem;
+  margin-top: -2rem;
+  border-radius: 1rem;
+}
+
+.contact .container-contact .contact-content .contact-schedule .contact-content-info .contact-info h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+.contact .container-contact .contact-content .contact-schedule .contact-content-info .contact-info p {
+  color: rgb(161 161 170/1);
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact .container-contact .contact-content .contact-schedule .contact-content-info .contact-info .contact-schedule-now {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact .container-contact .contact-content .contact-schedule .contact-content-info .contact-info .contact-schedule-now span {
+  color: rgb(45 212 191/1);
+  font-size: 1.25rem;
+}
+
+.contact .container-contact .contact-content .contact-schedule .contact-content-info .contact-info .contact-schedule-now svg {
+  width: 10px;
+  fill: #2dd4bf;
+}
+
+.contact .container-contact .contact-content .contact-schedule:hover {
+  background-color: #202022;
+}
+
+@media(max-width: 1215px) {
+  .contact {
+    padding: 7rem 3rem 5.5rem 3rem;
+  }
+}
+
+@media(max-width: 820px) {
+  .contact .container-contact .contact-content {
+    grid-template-columns: 100px 600px;
+  }
+}
+
+@media(max-width: 770px) {
+  .contact .container-contact .contact-introduce p {
+    width: 100%;
+  }
+
+  .contact .container-contact .contact-content {
+    padding-left: 0;
+    border-left: none;
+    grid-template-columns: 1fr;
+    margin-left: -2rem;
+  }
+
+  .contact .container-contact .contact-content .contact-me {
+    display: none;
+  }
+}
+
+@media(max-width: 625px) {
+  .contact {
+    padding: 7rem 3rem 3.5rem 3rem;
+  }
+}
+
+@media(max-width: 600px) {
+  .contact {
+    padding: 7rem 3rem 0 3rem;
+  }
+
+  .contact .container-contact .contact-content {
+    margin-top: 7rem;
+  }
+}
+
+@media(max-width: 505px) {
+  .contact {
+    padding: 3rem;
+  }
+
+  .contact .container-contact .contact-content {
+    margin-top: 4rem;
+  }
+
+  footer {
+    margin-top: 2rem;
+  }
+}

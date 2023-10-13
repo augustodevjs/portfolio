@@ -10,3 +10,6 @@
 @import "./content/home/courses.css";
 @import "./content/home/experience.css";
 @import "./content/home/recent-project.css";
+
+/* Contact */
+@import "./content/contact/contact.css";

@@ -16,6 +16,7 @@ body {
 }
 
 main {
+  min-height: 100vh;
   background: #18181b;
   border-right: 1px solid #2a2a2b;
   border-left: 1px solid #2a2a2b;
@@ -54,17 +55,14 @@ img {
   margin: 0 auto;
 }
 
-/* width */
 ::-webkit-scrollbar {
   width: 5px;
 }
 
-/* Track */
 ::-webkit-scrollbar-track {
   background-color: #0c0c0e87;
 }
 
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background: #a1a1aa;
   border-radius: 3px;

@@ -1,5 +1,5 @@
 .experience {
-  padding: 3rem 8rem 2rem 8rem;
+  padding: 4rem 8rem 2rem 8rem;
 }
 
 .experience .container-experience .experience-introduce {
@@ -31,8 +31,8 @@
 
 .experience .container-experience .experience-content .experience-journey p {
   font-size: 1.25rem;
-  color: #fff;
-  font-weight: 600;
+  color: rgb(138, 138, 144);
+  font-weight: 500;
 }
 
 .experience .container-experience .experience-content .experience-content-info {
@@ -48,21 +48,22 @@
 }
 
 .experience .container-experience .experience-content .experience-content-info .experience-info .job {
-  font-size: 1.75rem;
+  font-size: 1.85rem;
   color: #fff;
 }
 
 .experience .container-experience .experience-content .experience-content-info .experience-info .time-experience {
   color: #a3a3a6;
+  font-size: 1.15rem;
   margin-bottom: 0.5rem;
 }
 
 .experience .container-experience .experience-content .experience-content-info .experience-info ul li {
   color: #a1a1aa;
   width: 100ch;
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   list-style: initial;
-  line-height: 2rem;
+  line-height: 2.25rem;
   margin-left: 1.25rem;
 }
 
