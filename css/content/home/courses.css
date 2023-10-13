@@ -30,7 +30,7 @@
 }
 
 .courses .container-courses .card-content .card-course img:hover {
-  transform: scale(1.05);
+  transform: scale(1.025);
 }
 
 .courses .container-courses .card-content .card-course .card-info h4 {

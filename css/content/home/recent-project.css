@@ -40,6 +40,12 @@
     height: 300px;
     border-radius: 5px;
     object-fit: cover;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card img:hover {
+    transform: scale(1.025);
 }
 
 .recent-projects .recent-projects-container .recent-projects-content .recent-project-card .content-project {
