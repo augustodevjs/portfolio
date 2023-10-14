@@ -60,6 +60,10 @@
   padding-bottom: 0;
 }
 
+.project .container-project .project-content .all-projects .project-card {
+  width: 700px;
+}
+
 .project .container-project .project-content .all-projects .project-card img {
   width: 700px;
   height: 400px;
@@ -180,7 +184,8 @@
 
   .project .container-project .project-content .all-projects .project-card img,
   .project .container-project .project-content .all-projects .project-card .content-project p,
-  .project .container-project .project-content .all-projects .project-card .content-project .stacks {
+  .project .container-project .project-content .all-projects .project-card .content-project .stacks,
+  .project .container-project .project-content .all-projects .project-card {
     width: 100%;
   }
 
