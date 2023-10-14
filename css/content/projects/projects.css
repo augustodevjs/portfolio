@@ -1,0 +1,286 @@
+.project {
+  padding: 7rem 8rem 5.9rem 8rem;
+}
+
+.project .container-project .project-introduce {
+  margin-bottom: 4rem;
+}
+
+.project .container-project .project-introduce h2 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.project .container-project .project-introduce p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #a1a1aa;
+  margin-bottom: 1.75rem;
+  line-height: 2.25rem;
+  width: 80ch;
+}
+
+.project .container-project .project-content {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.project .container-project .project-content {
+  border-left: 1px solid rgba(63, 63, 70, .4);
+  padding-left: 2rem;
+  margin-top: 8rem;
+}
+
+.project .container-project .project-content .project-me p {
+  font-size: 1.25rem;
+  color: rgb(138, 138, 144);
+  font-weight: 500;
+}
+
+.project .container-project .project-content .all-projects {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project .container-project .project-content .all-projects .project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-bottom: 1px solid rgba(115, 115, 121, 0.4);
+  padding: 3rem 0;
+}
+
+.project .container-project .project-content .all-projects .project-card:first-child {
+  padding-top: 0;
+}
+
+.project .container-project .project-content .all-projects .project-card:last-child {
+  border: none;
+  padding-bottom: 0;
+}
+
+.project .container-project .project-content .all-projects .project-card img {
+  width: 700px;
+  height: 400px;
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+.project .container-project .project-content .all-projects .project-card img:hover {
+  transform: scale(1.025);
+}
+
+.project .container-project .project-content .all-projects .project-card .content-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.project .container-project .project-content .all-projects .project-card .content-project h3 {
+  font-size: 2.25rem;
+  color: #ede7e7;
+}
+
+.project .container-project .project-content .all-projects .project-card .content-project p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  width: 700px;
+  color: #a1a1aa;
+  margin-bottom: 1.75rem;
+}
+
+.project .container-project .project-content .all-projects .project-card .content-project .stacks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+  width: 700px;
+}
+
+.project .container-project .project-content .all-projects .project-card .content-project .stacks span {
+  font-size: 1.2rem;
+  color: rgb(44, 206, 185);
+  padding: 0.5rem;
+  background-color: rgb(26, 64, 59);
+  border-radius: 0.5rem;
+}
+
+.project .container-project .project-content .all-projects .project-card .content-project .links {
+  display: flex;
+  gap: 1rem;
+}
+
+.project .container-project .project-content .all-projects .project-card .content-project .links .github-link,
+.project .container-project .project-content .all-projects .project-card .content-project .links .project-online {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(39, 39, 42, .5);
+  padding: 1rem;
+  border-radius: .75rem;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+
+.project .container-project .project-content .all-projects .project-card .content-project .links .github-link:hover,
+.project .container-project .project-content .all-projects .project-card .content-project .links .project-online:hover {
+
+  background-color: rgb(39 39 42/1)
+}
+
+
+.project .container-project .project-content .all-projects .project-card .content-project .links .github-link svg,
+.project .container-project .project-content .all-projects .project-card .content-project .links .project-online svg {
+  font-size: 16px;
+}
+
+.project .container-project .project-content .all-projects .project-card .content-project .links .github-link div,
+.project .container-project .project-content .all-projects .project-card .content-project .links .project-online div {
+  color: #fff;
+  font-size: 1.25rem;
+  cursor: pointer;
+  gap: 0.85rem;
+  transition: 0.3s all;
+}
+
+@media(max-width: 1215px) {
+  .project {
+    padding: 7rem 3rem 5.9rem 3rem
+  }
+}
+
+@media(max-width: 990px) {
+  .project .container-project .project-content {
+    grid-template-columns: 150px 1fr;
+  }
+}
+
+@media(max-width: 930px) {
+  .project .container-project .project-content {
+    grid-template-columns: 100px 1fr;
+  }
+}
+
+@media(max-width: 880px) {
+  .project .container-project .project-content {
+    padding-left: 0;
+    grid-template-columns: 1fr;
+    border-left: none;
+  }
+
+  .project .container-project .project-content .project-me {
+    display: none;
+  }
+
+  .project .container-project .project-content .all-projects .project-card img,
+  .project .container-project .project-content .all-projects .project-card .content-project p,
+  .project .container-project .project-content .all-projects .project-card .content-project .stacks {
+    width: 100%;
+  }
+
+  .project .container-project .project-content .all-projects .project-card img {
+    height: 100%;
+  }
+
+  .project .container-project .project-introduce {
+    margin-bottom: 0;
+  }
+
+  .project .container-project .project-content {
+    margin-top: 3rem;
+  }
+}
+
+@media(max-width: 660px) {
+  .project .container-project .project-introduce p {
+    width: 100%;
+  }
+
+  .project {
+    padding-top: 3rem;
+  }
+}
+
+/* @media(max-width: 1070px) {
+  .project .container-project .project-content {
+    grid-template-columns: 150px 1fr;
+  }
+}
+
+@media(max-width: 1000px) {
+  .project .container-project .project-content {
+    grid-template-columns: 120px 1fr;
+  }
+}
+
+@media(max-width: 960px) {
+  .project .container-project .project-content {
+    padding-left: 0;
+    grid-template-columns: 1fr;
+    border-left: none;
+  }
+
+  .project .container-project .project-content .project-me {
+    display: none;
+  }
+}
+
+@media(max-width: 820px) {
+
+  .project .container-project .project-content .all-projects .project-card img,
+  .project .container-project .project-content .all-projects .project-card:first-child {
+    width: 100%;
+  }
+}
+
+@media(max-width: 770px) {
+  .project .container-project .project-introduce p {
+    width: 100%;
+  }
+
+  .project .container-project .project-content {
+    padding-left: 0;
+    border-left: none;
+    grid-template-columns: 1fr;
+    margin-left: -2rem;
+  }
+
+  .project .container-project .project-content .project-me {
+    display: none;
+  }
+}
+
+@media(max-width: 625px) {
+  .project {
+    padding: 7rem 3rem 3.5rem 3rem;
+  }
+}
+
+@media(max-width: 600px) {
+  .project {
+    padding: 7rem 3rem 0 3rem;
+  }
+
+  .project .container-project .project-content {
+    margin-top: 7rem;
+  }
+}
+
+@media(max-width: 505px) {
+  .project {
+    padding: 3rem;
+  }
+
+  .project .container-project .project-content {
+    margin-top: 4rem;
+  }
+
+  footer {
+    margin-top: 2rem;
+  }
+} */

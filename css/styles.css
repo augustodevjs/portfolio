@@ -14,3 +14,6 @@
 
 /* Contact */
 @import "./content/contact/contact.css";
+
+/* Projets */
+@import "./content/projects/projects.css";
