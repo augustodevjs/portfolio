@@ -71,7 +71,7 @@
   object-fit: cover;
   object-position: center;
   cursor: pointer;
-  transition: 0.3s all;
+  transition: 0.3s transform;
 }
 
 .project .container-project .project-content .all-projects .project-card img:hover {
@@ -128,7 +128,7 @@
   background-color: rgba(39, 39, 42, .5);
   padding: 1rem;
   border-radius: .75rem;
-  transition: 0.3s all;
+  transition: 0.3s background-color;
   cursor: pointer;
 }
 

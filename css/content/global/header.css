@@ -140,7 +140,7 @@ header .container .nav-bar .menu .menu-navbar .social-media {
 
 .menu-right nav ul li {
   position: relative;
-  transition: 0.3s all;
+  transition: 0.3s color;
 }
 
 .menu-right nav ul li.active {
@@ -304,7 +304,7 @@ header .container .nav-bar .menu .menu-navbar .social-media {
     color: #FFF;
     font-size: 1.5rem;
     font-weight: 400;
-    transition: 0.3s all;
+    transition: 0.3s color;
   }
 
   .mobile-navbar .menu-mobile-hamburguer .menu-mobile-header li a:hover {
@@ -336,7 +336,7 @@ header .container .nav-bar .menu .menu-navbar .social-media {
   .mobile-navbar .menu-mobile-hamburguer .menu-icons a svg {
     width: 22px;
     height: 22px;
-    transition: 0.3s all;
+    transition: 0.3s fill;
   }
 
   .mobile-navbar .menu-mobile-hamburguer .menu-icons a svg:hover {

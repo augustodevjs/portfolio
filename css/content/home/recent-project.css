@@ -41,7 +41,7 @@
     border-radius: 5px;
     object-fit: cover;
     cursor: pointer;
-    transition: 0.3s all;
+    transition: 0.3s transform;
 }
 
 .recent-projects .recent-projects-container .recent-projects-content .recent-project-card img:hover {
@@ -88,7 +88,7 @@
     font-size: 1.25rem;
     cursor: pointer;
     gap: 0.85rem;
-    transition: 0.3s all;
+    transition: 0.3s color;
 }
 
 .recent-projects .recent-projects-container .recent-projects-content .recent-project-card .content-project a svg {

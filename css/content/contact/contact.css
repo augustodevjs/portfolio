@@ -38,7 +38,7 @@
 }
 
 .contact .container-contact .contact-content .contact-schedule {
-  transition: 0.3s all;
+  transition: 0.3s background-color;
   padding: 2rem;
   margin-top: -2rem;
   border-radius: 1rem;
