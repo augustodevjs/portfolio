@@ -12,7 +12,7 @@ export default function headerActive() {
 
   if (match && match[1]) {
     switch (match[1]) {
-      case '/':
+      case 'https://jaugustodev.netlify.app/':
         links[0].classList.add('active');
         break;
       case 'projetos':
