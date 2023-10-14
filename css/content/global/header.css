@@ -143,6 +143,10 @@ header .container .nav-bar .menu .menu-navbar .social-media {
   transition: 0.3s all;
 }
 
+.menu-right nav ul li.active {
+  color: rgb(45 212 191/1) !important;
+}
+
 .menu-right nav ul li:hover {
   color: rgb(45 212 191/1);
 }
