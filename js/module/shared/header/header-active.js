@@ -3,7 +3,7 @@ export default function headerActive() {
   console.log('URL:', window.location.href);
   
   const url = window.location.href;
-  const match = url.match(/\/([^\/]+)\.html$/);
+  const match = url.match(/\/([^\/]+)\/?$/);
   const links = document.querySelectorAll('.menu-right nav ul li');
 
   // Log values to check if the script is reaching this point
