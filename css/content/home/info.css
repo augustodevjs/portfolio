@@ -57,7 +57,7 @@
   text-align: center;
   font-size: 22px;
   font-weight: 500;
-  width: 20ch;
+  width: 25ch;
 }
 
 .info .container-info .stack-info .stack .tech-images {
@@ -67,8 +67,8 @@
 }
 
 .info .container-info .stack .tech-images img {
-  width: 4rem;
-  height: 4rem;
+  width: 3.75rem;
+  height: 3.75rem;
 }
 
 .info .container-info .text-info-me .info-icons {
@@ -137,6 +137,12 @@
   .info .container-info .stack-info .stack,
   .info .container-info .stack-info {
     width: 100%;
+  }
+}
+
+@media(max-width: 430px) {
+  .info .container-info .stack-info .stack .main-stack p {
+    width: 20ch;
   }
 }
 
