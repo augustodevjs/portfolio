@@ -8,6 +8,7 @@
 
 /* Home */
 @import "./content/home/info.css";
+@import "./content/home/video.css";
 @import "./content/home/courses.css";
 @import "./content/home/experience.css";
 @import "./content/home/recent-project.css";

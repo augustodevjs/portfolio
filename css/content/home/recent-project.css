@@ -105,6 +105,12 @@
     width: 10px;
 }
 
+.recent-projects .recent-project-card .content-project .content-actions {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+}
+
 @media(max-width: 1215px) {
     .recent-projects {
         padding: 4rem 3rem 0 3rem;
