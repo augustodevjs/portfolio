@@ -6,7 +6,7 @@ export default function video() {
     const closeIconEl = document.querySelector(".close-icon-video");
     const trailerContainerEl = document.querySelector(".trailer-container-video");
     const videoEl = document.querySelector("video");
-  
+
     btnEl.addEventListener("click", () => {
       trailerContainerEl.classList.remove("active-video");
       document.body.style.overflow = 'hidden';

@@ -32,6 +32,7 @@
   width: 20px;
   height: 20px;
   cursor: pointer;
+  fill: #fff;
 }
 
 @media(max-width: 1050px) {
