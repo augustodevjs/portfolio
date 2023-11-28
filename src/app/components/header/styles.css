@@ -1,0 +1,384 @@
+.header {
+  padding: 2rem 8rem 0 8rem;
+}
+
+.nav-bar {
+  width: 100%;
+  position: relative;
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.logo {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.logo p {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.logo p::after {
+  content: ".dev";
+  font-weight: 700;
+  background: linear-gradient(to right, rgb(40, 142, 128), rgb(45 212 191/1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.header-menu {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.menu-desktop {
+  display: flex;
+  align-items: center;
+}
+
+.menu-mobile-hamburguer {
+  display: none;
+}
+
+.menu-navbar .header-menu-day {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-right: 3rem;
+  cursor: pointer;
+}
+
+.menu-navbar .group-icon {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.menu-navbar .group-icon img {
+  cursor: pointer;
+}
+
+.menu {
+  display: none;
+}
+
+.menu li {
+  padding-left: 3rem;
+}
+
+.menu li a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+}
+
+.menu li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  transition: 0.15s ease-in-out;
+}
+
+.open-menu,
+.close-menu {
+  position: absolute;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: none;
+}
+
+header .container .nav-bar .menu .menu-navbar .social-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 3rem;
+  margin-top: 2rem;
+}
+
+.close-menu svg {
+  fill: #fff;
+}
+
+.open-menu {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.menu-align-end {
+  display: none;
+}
+
+.menu-right {
+  display: block;
+}
+
+.menu-right nav ul {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.menu-right nav ul li {
+  position: relative;
+  transition: 0.3s color;
+}
+
+.menu-right nav ul li.active {
+  color: rgb(45 212 191/1) !important;
+}
+
+.menu-right nav ul li:hover {
+  color: rgb(45 212 191/1);
+}
+
+.menu-right nav ul li a {
+  padding: 8px 8px 8px 8px;
+}
+
+.menu-right nav ul li.active-contact a {
+  background-color: var(--magenta);
+  color: var(--white);
+}
+
+@media (max-width: 1215px) {
+  .header {
+    padding: 2rem 3rem 0 3rem;
+  }
+}
+
+@media(max-width: 505px) {
+  .header {
+    padding: 0 0 0 3rem;
+  }
+
+  .close-menu {
+    padding: 3.6rem 3.5rem;
+    top: 0px;
+    right: 0px;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .menu-right nav {
+    display: none;
+  }
+
+  .menu-desktop {
+    display: none;
+  }
+
+  .menu-right {
+    display: flex;
+    gap: 2rem;
+  }
+
+  .menu-right .group-icon {
+    display: flex;
+    gap: 1.6rem;
+  }
+
+  .menu-right .group-icon img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  .menu-align-end {
+    height: 90px;
+    display: flex;
+    padding: 2rem 3rem;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .menu-align-end svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+  }
+
+  .header-menu {
+    display: none;
+  }
+
+  .social-media {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .social-media img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+  }
+
+  .social-media p {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+
+  .social-media p::after {
+    content: ".dev";
+    font-weight: 700;
+    background: linear-gradient(to right, rgb(40, 142, 128), rgb(45 212 191/1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 100;
+    background: #18181b;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menu li {
+    margin-top: 4rem;
+  }
+
+  .menu li a {
+    padding: 1rem 1rem 1rem 0;
+  }
+
+  .open-menu,
+  .close-menu {
+    display: block;
+  }
+
+  .mobile-navbar {
+    left: 0;
+    overflow: auto;
+  }
+
+  .mobile-navbar .menu-mobile-hamburguer {
+    display: block;
+  }
+
+  .mobile-navbar .menu-mobile-hamburguer .menu-mobile-header {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-navbar .menu-mobile-hamburguer .menu-mobile-header li {
+    margin-top: 0;
+    padding-left: 0;
+    color: white;
+  }
+
+  .mobile-navbar .menu-mobile-hamburguer .menu-mobile-header li a {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 400;
+    transition: 0.3s color;
+  }
+
+  .mobile-navbar .menu-mobile-hamburguer .menu-mobile-header li a:hover {
+    color: rgb(45 212 191/1);
+  }
+
+  .mobile-navbar .menu-mobile-hamburguer .border {
+    position: absolute;
+    top: 220px;
+    left: 0;
+    margin: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    height: 1px;
+    width: -webkit-fill-available;
+    background-color: rgba(115, 115, 121, 0.4);
+  }
+
+  .mobile-navbar .menu-mobile-hamburguer .menu-icons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    position: absolute;
+    top: 240px;
+    left: 0;
+    margin: 0 3rem;
+  }
+
+  .mobile-navbar .menu-mobile-hamburguer .menu-icons a svg {
+    width: 22px;
+    height: 22px;
+    transition: 0.3s fill;
+  }
+
+  .mobile-navbar .menu-mobile-hamburguer .menu-icons a svg:hover {
+    fill: rgb(45 212 191/1);
+  }
+}
+
+@media(max-width: 340px) {
+  .logo img {
+    display: none;
+  }
+
+  .logo {
+    gap: 0;
+  }
+}
+
+@media(max-width: 310px) {
+  header .container .nav-bar .menu .menu-navbar .social-media .circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .close-menu {
+    padding: 3.2rem 3.5rem;
+  }
+
+  .social-media {
+    gap: 0;
+  }
+
+  .social-media img {
+    display: none;
+  }
+
+  header .container .nav-bar .menu .menu-navbar .social-media {
+    margin-top: 2.5rem;
+  }
+}
+
+@media(max-width: 280px) {
+  .nav-bar {
+    gap: 1rem;
+  }
+}
