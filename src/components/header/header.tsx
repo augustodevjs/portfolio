@@ -1,8 +1,11 @@
 import Image from 'next/image'
 import Profile from '../../assets/images/profile.png'
 import './styles.css'
+import { useState } from 'react'
 
 export const Header = () => {
+  const [showInfoMenuHamburguer, setShowInfoMenuHamburguer] = useState(false);
+
   return (
     <header>
       <div className="container header">
@@ -32,8 +35,7 @@ export const Header = () => {
           <div className="menu">
             <div className="menu-navbar">
               <a href="/" className="social-media">
-                <Image src="/assets/images/profile.png" width={100} height={100} alt="profile" />
-
+                <Image src={Profile} width={100} height={100} alt="profile" />
                 <p>jaugusto</p>
               </a>
               <div className="close-menu white">
