@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Profile from '../../../assets/images/profile.png'
+import Profile from '../../assets/images/profile.png'
 import './styles.css'
 
 export const Header = () => {
