@@ -1,0 +1,104 @@
+.experience {
+  padding: 4rem 8rem 2rem 8rem;
+}
+
+.experience .container-experience .experience-introduce {
+  margin-bottom: 3rem;
+}
+
+.experience .container-experience .experience-introduce h2 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.experience .container-experience .experience-introduce p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #a1a1aa;
+  margin-bottom: 1.75rem;
+  width: 70ch;
+}
+
+.experience .container-experience .experience-content {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+
+.experience .container-experience .experience-content {
+  border-left: 1px solid rgba(63, 63, 70, .4);
+  padding-left: 2rem;
+}
+
+.experience .container-experience .experience-content .experience-journey p {
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.experience .container-experience .experience-content .experience-content-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.experience .container-experience .experience-content .experience-content-info .experience-info h3 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  color: #b2b2b8;
+}
+
+.experience .container-experience .experience-content .experience-content-info .experience-info .job {
+  font-size: 1.85rem;
+  color: #fff;
+}
+
+.experience .container-experience .experience-content .experience-content-info .experience-info .time-experience {
+  color: #a3a3a6;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience .container-experience .experience-content .experience-content-info .experience-info ul li {
+  color: #a1a1aa;
+  width: 100ch;
+  font-size: 1.2rem;
+  list-style: initial;
+  line-height: 2.25rem;
+  margin-left: 1.25rem;
+}
+
+@media(max-width: 1215px) {
+  .experience {
+    padding: 4rem 3rem 0 3rem;
+  }
+}
+
+@media(max-width: 950px) {
+  .experience .container-experience .experience-content .experience-content-info .experience-info ul li {
+    width: 100%;
+  }
+}
+
+@media(max-width: 750px) {
+  .experience .container-experience .experience-content {
+    grid-template-columns: 120px 1fr;
+  }
+}
+
+@media(max-width: 680px) {
+  .experience .container-experience .experience-content {
+    padding-left: 0;
+    border-left: none;
+    grid-template-columns: 1fr;
+  }
+
+  .experience .container-experience .experience-content .experience-journey {
+    display: none;
+  }
+}
+
+@media(max-width: 580px) {
+  .experience .container-experience .experience-introduce p {
+    width: 100%;
+  }
+}

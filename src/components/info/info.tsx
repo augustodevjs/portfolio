@@ -4,7 +4,7 @@ import Dotnet from '../../assets/images/dotnet.png'
 import React from '../../assets/icon/react-js-icon.svg'
 import './styles.css'
 
-export const InfoHome = () => {
+export const Info = () => {
   return (
     <section className="info">
       <div className="container-info">

@@ -1,10 +1,12 @@
-import { InfoHome, RecentProjectsHome } from '../components'
+import { Courses, Experience, Info, RecentProjects } from '../components'
 
 export default function Page() {
   return (
     <>
-      <InfoHome />
-      <RecentProjectsHome />
+      <Info />
+      <RecentProjects />
+      <Experience />
+      <Courses />
     </>
   )
 }

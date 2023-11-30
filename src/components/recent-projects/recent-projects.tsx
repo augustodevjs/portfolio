@@ -6,7 +6,7 @@ import sysra from '../../assets/images/sysra-landing.png'
 import intranet from '../../assets/images/intranet.png'
 import './styles.css'
 
-export const RecentProjectsHome = () => {
+export const RecentProjects = () => {
   return (
     <section className="recent-projects">
       <div className="recent-projects-container">
