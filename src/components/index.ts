@@ -1,0 +1,5 @@
+export * from './footer/footer'
+export * from './header/header'
+export * from './info-home/info-home'
+export * from './items-link/items-link'
+export * from './recent-projects-home/recent-projects-home'
