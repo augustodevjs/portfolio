@@ -1,5 +1,7 @@
+import { Projects } from "../../components";
+
 export default function Page() {
   return (
-    <div>Projetos</div>
+    <Projects />
   )
 } 
