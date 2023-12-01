@@ -1,9 +1,5 @@
 import Link from "next/link"
-
-type ItemsLinkProps = {
-  label: string
-  href: string
-}
+import { ItemsLinkProps } from "../types"
 
 export const ItemsLink = ({ label, href }: ItemsLinkProps) => {
   return (

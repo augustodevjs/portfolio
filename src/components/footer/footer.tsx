@@ -1,5 +1,4 @@
-import Link from 'next/link'
-import { ItemsLink } from '../items-link/items-link'
+import { ItemsLink } from '..'
 import './styles.css'
 
 const NAV_ITEMS = [

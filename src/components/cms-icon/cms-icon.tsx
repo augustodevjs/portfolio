@@ -1,6 +1,4 @@
-type CmsIconProps = {
-  icon: string;
-}
+import { CmsIconProps } from "../types"
 
 export const CmsIcon = ({ icon }: CmsIconProps) => {
   return (

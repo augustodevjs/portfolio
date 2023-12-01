@@ -7,6 +7,14 @@ export type HomePage = {
   jobTitle: string
   socials: Socials[]
   stacks: Stacks[]
+  profilePicture: ProfilePicture
+  apresentation: string;
+}
+
+export type ProfilePicture = {
+  url: string;
+  height: number;
+  width: number;
 }
 
 export type Socials = {

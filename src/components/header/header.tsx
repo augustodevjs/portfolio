@@ -1,7 +1,10 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
+import { HeaderProps } from '../types'
 import { ItemsLink } from '../items-link/items-link'
-import Profile from '../../assets/images/profile.png'
+
 import './styles.css'
 
 const NAV_ITEMS = [
@@ -19,13 +22,13 @@ const NAV_ITEMS = [
   }
 ]
 
-export const Header = () => {
+export const Header = ({ home }: HeaderProps) => {
   return (
     <header>
       <div className="container header">
         <div className="nav-bar">
           <Link href="/" className="logo" data-anime="top">
-            <Image src={Profile} width={800} height={800} alt="profile" />
+            <Image src={home.profilePicture.url} width={home.profilePicture.width} height={home.profilePicture.height} alt="profile" />
             <p>jaugusto</p>
           </Link>
 
@@ -49,7 +52,7 @@ export const Header = () => {
           <div className="menu">
             <div className="menu-navbar">
               <Link href="/" className="social-media">
-                <Image src={Profile} width={800} height={800} alt="profile" />
+                <Image src={home.profilePicture.url} width={home.profilePicture.width} height={home.profilePicture.height} alt="profile" />
                 <p>jaugusto</p>
               </Link>
               <div className="close-menu white">

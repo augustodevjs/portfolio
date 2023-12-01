@@ -2,24 +2,19 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import Dotnet from '../../assets/images/dotnet.png'
-import React from '../../assets/icon/react-js-icon.svg'
-import { HomePage } from "../../models/home-hygraph"
-import { RichText } from "../rich-text/rich-text";
-import './styles.css'
-import { CmsIcon } from "../cms-icon/cms-icon";
 
-type InfoProps = {
-  info: HomePage
-}
+import { InfoProps } from "../types";
+import { CmsIcon } from "../cms-icon/cms-icon";
+import { RichText } from "@graphcms/rich-text-react-renderer";
+
+import './styles.css'
 
 export const Info = ({ info }: InfoProps) => {
-
   return (
     <section className="info">
       <div className="container-info">
         <div className="text-info-me">
-          <h1>Olá, me chamo João Augusto.</h1>
+          <h1>{info.apresentation}</h1>
 
           <RichText content={info.introduction.raw} />
 

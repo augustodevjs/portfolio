@@ -1,40 +1,8 @@
-import { fetchHygraphQuery } from '../utils/fetch-hygraph-query';
-import { Courses, Experience, Info, RecentProjects } from '../components'
-import { HomeHyGrahp } from '../models/home-hygraph';
-
-const getPageData = async (): Promise<HomeHyGrahp> => {
-  const query = `
-  query HomePage {
-    home(where: {slug: "home"}) {
-      introduction {
-        raw
-      }
-      jobTitle
-      socials {
-        iconSvg
-        name
-        url
-      }
-      stacks {
-        stackTech {
-          url
-          height
-          size
-          width
-        }
-      }
-    }
-  }
-  `;
-
-  return fetchHygraphQuery(
-    query,
-    // 60 * 60 * 24
-  )
-}
+import { HomeService } from "@/services";
+import { Courses, Experience, Info, RecentProjects } from "@/components";
 
 export default async function Page() {
-  const { home: HomePage } = await getPageData();
+  const { home: HomePage } = await HomeService();
 
   return (
     <>
