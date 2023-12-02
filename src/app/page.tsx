@@ -8,7 +8,7 @@ export default async function Page() {
     <>
       <Info info={HomePage} />
       <RecentProjects />
-      <Experience />
+      <Experience experience={HomePage} />
       <Courses />
     </>
   )

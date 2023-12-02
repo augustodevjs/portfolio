@@ -1,5 +1,5 @@
 import { HomeHyGrahp } from "../models";
-import { fetchHygraphQuery } from "../utils/fetch-hygraph-query";
+import { fetchHygraphQuery } from "@/utils";
 
 export const HomeService = async (): Promise<HomeHyGrahp> => {
   const query = `
@@ -19,9 +19,18 @@ export const HomeService = async (): Promise<HomeHyGrahp> => {
             url
             height
             width
+            fileName
           }
         }
         apresentation
+        experienceProfessional {
+          titleExperience
+          apresentationJob
+          trajetoria
+          experience {
+            raw
+          }
+        }
       }
     }
   `;

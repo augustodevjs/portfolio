@@ -1,5 +1,5 @@
 import { HeaderHygraph } from "@/models";
-import { fetchHygraphQuery } from "../utils/fetch-hygraph-query";
+import { fetchHygraphQuery } from "@/utils";
 
 export const HeaderService = async (): Promise<HeaderHygraph> => {
   const query = `
@@ -9,6 +9,7 @@ export const HeaderService = async (): Promise<HeaderHygraph> => {
           width
           height
           url
+          fileName
         }
       }
     }

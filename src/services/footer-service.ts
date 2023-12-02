@@ -1,5 +1,5 @@
 import { FooterHygraph } from "@/models";
-import { fetchHygraphQuery } from "../utils/fetch-hygraph-query";
+import { fetchHygraphQuery } from "@/utils";
 
 export const FooterService = async (): Promise<FooterHygraph> => {
   const query = `

@@ -1,9 +1,8 @@
-"use client";
-
 import Link from "next/link"
 import Image from "next/image"
 
 import { InfoProps } from "../types";
+import { extractNameFile } from "@/utils";
 import { CmsIcon } from "../cms-icon/cms-icon";
 import { RichText } from "@graphcms/rich-text-react-renderer";
 
@@ -41,7 +40,13 @@ export const Info = ({ info }: InfoProps) => {
 
             <div className="tech-images">
               {info.stacks.map((stack, index) => (
-                <Image src={stack.stackTech.url} width={stack.stackTech.width} height={stack.stackTech.height} key={index} alt="" />
+                <Image
+                  src={stack.stackTech.url}
+                  width={stack.stackTech.width}
+                  height={stack.stackTech.height}
+                  key={index}
+                  alt={extractNameFile(stack.stackTech.fileName)}
+                />
               ))}
             </div>
           </div>

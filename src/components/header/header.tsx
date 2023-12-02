@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { ItemsLink } from '..'
 import { HeaderProps } from '../types'
+import { extractNameFile } from '@/utils'
 
 import './styles.css'
 
@@ -26,7 +27,12 @@ export const Header = ({ header }: HeaderProps) => {
       <div className="container header">
         <div className="nav-bar">
           <Link href="/" className="logo" data-anime="top">
-            <Image src={header.profile.url} width={header.profile.width} height={header.profile.height} alt="profile" />
+            <Image
+              src={header.profile.url}
+              width={header.profile.width}
+              height={header.profile.height}
+              alt={extractNameFile(header.profile.fileName)}
+            />
             <p>jaugusto</p>
           </Link>
 
@@ -50,7 +56,12 @@ export const Header = ({ header }: HeaderProps) => {
           <div className="menu">
             <div className="menu-navbar">
               <Link href="/" className="social-media">
-                <Image src={header.profile.url} width={header.profile.width} height={header.profile.height} alt="profile" />
+                <Image
+                  src={header.profile.url}
+                  width={header.profile.width}
+                  height={header.profile.height}
+                  alt={extractNameFile(header.profile.fileName)}
+                />
                 <p>jaugusto</p>
               </Link>
               <div className="close-menu white">

@@ -8,6 +8,16 @@ export type HomePage = {
   socials: Socials[]
   stacks: Stacks[]
   apresentation: string;
+  experienceProfessional: ExperienceProfessional
+}
+
+export type ExperienceProfessional = {
+  titleExperience: string
+  apresentationJob: string
+  trajetoria: string
+  experience: {
+    raw: RichTextContent;
+  }[]
 }
 
 export type Socials = {
@@ -21,6 +31,7 @@ export type Stacks = {
     url: string
     height: number
     width: number
+    fileName: string
   };
   name: string;
 }

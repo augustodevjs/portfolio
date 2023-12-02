@@ -3,6 +3,7 @@ export type ProfilePicture = {
     width: number;
     height: number;
     url: string;
+    fileName: string;
   }
 }
 

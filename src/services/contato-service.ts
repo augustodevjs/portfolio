@@ -1,5 +1,5 @@
 import { ContatoHygraph } from "@/models";
-import { fetchHygraphQuery } from "../utils/fetch-hygraph-query";
+import { fetchHygraphQuery } from "@/utils";
 
 export const ContatoService = async (): Promise<ContatoHygraph> => {
   const query = `

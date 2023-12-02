@@ -28,3 +28,7 @@ export type ContactProps = {
 export type FooterProps = {
   footer: FooterContent
 }
+
+export type ExperienceProps = {
+  experience: HomePage
+}
