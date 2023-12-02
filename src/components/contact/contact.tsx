@@ -1,40 +1,41 @@
+'use client';
+
+import Link from 'next/link';
+import { ContatoPage } from '@/models/contato-hypgrah'
+import { RichText } from "@graphcms/rich-text-react-renderer";
+
 import './styles.css'
 
-export const Contact = () => {
+type ContactProps = {
+  contact: ContatoPage
+}
+
+export const Contact = ({ contact }: ContactProps) => {
   return (
     <section className="contact">
       <div className="container-contact">
         <div className="contact-introduce" data-anime="left">
-          <h2>Entre em contato comigo.</h2>
+          <h2>{contact.titleContato}</h2>
           <p>
-            Em busca de um website ou aplicativo para destacar seu produto
-            online? Agende um horário, e juntos, criaremos a presença digital
-            perfeita para o seu negócio! Estou aqui para transformar suas
-            ideias em realidade e elevar a visibilidade da sua marca online 😃
+            {contact.introductionDescriptionContato}
           </p>
         </div>
 
         <div className="contact-content" data-anime="top">
           <div className="contact-me">
-            <p>Contato</p>
+            <p>{contact.contato}</p>
           </div>
 
-          <a
-            href="https://cal.com/jaugusto-dev"
+          <Link
+            href={contact.contatoLink}
             target="_blank"
             className="contact-schedule"
           >
             <div className="contact-content-info">
               <div className="contact-info">
-                <h3>Converse comigo</h3>
-                <p>
-                  Agende uma conversa para nos conhecermos. Estou pronto para
-                  compartilhar minha história e, quem sabe, colaborarmos.
-                  Espero ansioso pela oportunidade de nos conectarmos e
-                  explorarmos possíveis projetos juntos.
-                </p>
+                <RichText content={contact.entreContato.raw} />
                 <div className="contact-schedule-now">
-                  <span>Agende agora</span>
+                  <span>{contact.agendeContato}</span>
 
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +48,7 @@ export const Contact = () => {
                 </div>
               </div>
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </section>
