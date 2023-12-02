@@ -1,10 +1,10 @@
-import { HeaderHygraph } from "@/models/header-hygraph";
+import { HeaderHygraph } from "@/models";
 import { fetchHygraphQuery } from "../utils/fetch-hygraph-query";
 
 export const HeaderService = async (): Promise<HeaderHygraph> => {
   const query = `
     query profile {
-      values: profilePicture(where: {id: "clpo4htuh1dn50altc1lf1705"}) {
+      values: profilePicture(where: {profilePicture: "profile"}) {
         profile {
           width
           height

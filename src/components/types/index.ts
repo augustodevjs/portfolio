@@ -1,6 +1,5 @@
 import { ComponentProps } from "react";
-import { HomePage } from "@/models/home-hygraph";
-import { ProfilePicture } from "@/models/header-hygraph";
+import { ContatoPage, ProfilePicture, HomePage, FooterContent } from "@/models";
 import { RichText as CMSRichText } from "@graphcms/rich-text-react-renderer"
 
 export type CmsIconProps = {
@@ -21,3 +20,11 @@ export type ItemsLinkProps = {
 }
 
 export type RichTextProps = ComponentProps<typeof CMSRichText>
+
+export type ContactProps = {
+  contact: ContatoPage
+}
+
+export type FooterProps = {
+  footer: FooterContent
+}

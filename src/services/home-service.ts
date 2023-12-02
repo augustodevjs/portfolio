@@ -1,4 +1,4 @@
-import { HomeHyGrahp } from "../models/home-hygraph";
+import { HomeHyGrahp } from "../models";
 import { fetchHygraphQuery } from "../utils/fetch-hygraph-query";
 
 export const HomeService = async (): Promise<HomeHyGrahp> => {

@@ -1,9 +1,7 @@
-'use client'
-
 import Link from 'next/link'
 import Image from 'next/image'
+import { ItemsLink } from '..'
 import { HeaderProps } from '../types'
-import { ItemsLink } from '../items-link/items-link'
 
 import './styles.css'
 

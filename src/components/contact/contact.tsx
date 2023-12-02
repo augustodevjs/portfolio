@@ -1,14 +1,8 @@
-'use client';
-
 import Link from 'next/link';
-import { ContatoPage } from '@/models/contato-hypgrah'
+import { ContactProps } from '../types';
 import { RichText } from "@graphcms/rich-text-react-renderer";
 
 import './styles.css'
-
-type ContactProps = {
-  contact: ContatoPage
-}
 
 export const Contact = ({ contact }: ContactProps) => {
   return (

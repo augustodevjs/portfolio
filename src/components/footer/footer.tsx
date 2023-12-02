@@ -1,4 +1,7 @@
+
 import { ItemsLink } from '..'
+import { FooterProps } from '../types'
+
 import './styles.css'
 
 const NAV_ITEMS = [
@@ -16,7 +19,7 @@ const NAV_ITEMS = [
   }
 ]
 
-export const Footer = () => {
+export const Footer = ({ footer }: FooterProps) => {
   return (
     <footer>
       <div className="container-footer">
@@ -28,7 +31,7 @@ export const Footer = () => {
           </ul>
         </nav>
 
-        <p>© 2023 João Augusto. Todos os direitos reservados.</p>
+        <p>{footer.copyright}</p>
       </div>
     </footer>
   )
