@@ -22,13 +22,13 @@ const NAV_ITEMS = [
   }
 ]
 
-export const Header = ({ home }: HeaderProps) => {
+export const Header = ({ header }: HeaderProps) => {
   return (
     <header>
       <div className="container header">
         <div className="nav-bar">
           <Link href="/" className="logo" data-anime="top">
-            <Image src={home.profilePicture.url} width={home.profilePicture.width} height={home.profilePicture.height} alt="profile" />
+            <Image src={header.profile.url} width={header.profile.width} height={header.profile.height} alt="profile" />
             <p>jaugusto</p>
           </Link>
 
@@ -52,7 +52,7 @@ export const Header = ({ home }: HeaderProps) => {
           <div className="menu">
             <div className="menu-navbar">
               <Link href="/" className="social-media">
-                <Image src={home.profilePicture.url} width={home.profilePicture.width} height={home.profilePicture.height} alt="profile" />
+                <Image src={header.profile.url} width={header.profile.width} height={header.profile.height} alt="profile" />
                 <p>jaugusto</p>
               </Link>
               <div className="close-menu white">

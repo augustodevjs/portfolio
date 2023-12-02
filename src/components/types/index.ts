@@ -1,5 +1,6 @@
 import { ComponentProps } from "react";
 import { HomePage } from "@/models/home-hygraph";
+import { ProfilePicture } from "@/models/header-hygraph";
 import { RichText as CMSRichText } from "@graphcms/rich-text-react-renderer"
 
 export type CmsIconProps = {
@@ -7,7 +8,7 @@ export type CmsIconProps = {
 }
 
 export type HeaderProps = {
-  home: HomePage
+  header: ProfilePicture
 }
 
 export type InfoProps = {

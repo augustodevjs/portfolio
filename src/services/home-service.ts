@@ -21,11 +21,6 @@ export const HomeService = async (): Promise<HomeHyGrahp> => {
             width
           }
         }
-        profilePicture {
-          url
-          height
-          width
-        }
         apresentation
       }
     }
