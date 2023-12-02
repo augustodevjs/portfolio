@@ -32,3 +32,11 @@ export type FooterProps = {
 export type ExperienceProps = {
   experience: HomePage
 }
+
+export type CoursesProps = {
+  courses: HomePage
+}
+
+export type RecentProjectsProps = {
+  recentProjects: HomePage
+}

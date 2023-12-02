@@ -1,5 +1,6 @@
 import { ExperienceProps } from '../types';
 import { RichText } from "@graphcms/rich-text-react-renderer";
+
 import './styles.css'
 
 export const Experience = ({ experience }: ExperienceProps) => {

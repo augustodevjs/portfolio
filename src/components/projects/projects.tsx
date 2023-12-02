@@ -1,7 +1,7 @@
 'use client';
 import Image from "next/image"
 import Link from "next/link";
-import sysra from '../../assets/images/sysra-landing.png'
+// import sysra from '../../assets/images/sysra-landing.png'
 
 import './styles.css'
 
@@ -24,7 +24,7 @@ export const Projects = () => {
           </div>
 
           <div className="all-projects">
-            <div className="project-card">
+            {/* <div className="project-card">
               <Image
                 src={sysra}
                 alt="sysra"
@@ -79,7 +79,7 @@ export const Projects = () => {
                   </Link>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

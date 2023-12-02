@@ -4,11 +4,34 @@ export type HomePage = {
   introduction: {
     raw: RichTextContent;
   }
+  stackPrincipal: string
   jobTitle: string
   socials: Socials[]
   stacks: Stacks[]
   apresentation: string;
   experienceProfessional: ExperienceProfessional
+  courses: Courses[]
+  titleCourse: string
+  titleRecentProjects: string
+  recentProjects: RecentProjects[]
+}
+
+export type RecentProjects = {
+  image: {
+    url: string
+    fileName: string
+    width: number
+    height: number
+  }
+  title: string
+  description: string
+  showProject: string
+  url: string
+  technologies: Technologies[]
+}
+
+export type Technologies = {
+  name: string
 }
 
 export type ExperienceProfessional = {
@@ -18,6 +41,16 @@ export type ExperienceProfessional = {
   experience: {
     raw: RichTextContent;
   }[]
+}
+
+export type Courses = {
+  url: string
+  certificate: {
+    width: number
+    height: number
+    fileName: string
+    url: string
+  }
 }
 
 export type Socials = {

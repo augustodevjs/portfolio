@@ -34,7 +34,7 @@ export const Info = ({ info }: InfoProps) => {
         <div className="stack-info">
           <div className="stack">
             <div className="main-stack">
-              <span>Stack Principal</span>
+              <span>{info.stackPrincipal}</span>
               <p>{info.jobTitle}</p>
             </div>
 

@@ -8,6 +8,7 @@ export const HomeService = async (): Promise<HomeHyGrahp> => {
         introduction {
           raw
         }
+        stackPrincipal
         jobTitle
         socials {
           iconSvg
@@ -29,6 +30,32 @@ export const HomeService = async (): Promise<HomeHyGrahp> => {
           trajetoria
           experience {
             raw
+          }
+        }
+        courses {
+          url
+          certificate {
+            width
+            height
+            fileName
+            url
+          }
+        }
+        titleCourse
+          titleRecentProjects
+        recentProjects {
+          image {
+            url
+            fileName
+            width
+            height
+          }
+          title
+          description
+          showProject
+          url
+          technologies {
+            name
           }
         }
       }
