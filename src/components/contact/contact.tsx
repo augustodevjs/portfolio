@@ -1,6 +1,9 @@
+'use client'
+
 import Link from 'next/link';
 import { ContactProps } from '../types';
 import { RichText } from "@graphcms/rich-text-react-renderer";
+import { motion } from 'framer-motion';
 
 import './styles.css'
 
@@ -9,13 +12,25 @@ export const Contact = ({ contact }: ContactProps) => {
     <section className="contact">
       <div className="container-contact">
         <div className="contact-introduce" data-anime="left">
-          <h2>{contact.titleContato}</h2>
-          <p>
+          <motion.h2
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            {contact.titleContato}
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
             {contact.introductionDescriptionContato}
-          </p>
+          </motion.p>
         </div>
 
-        <div className="contact-content" data-anime="top">
+        <motion.div initial={{ opacity: 0, x: -20 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }} className="contact-content" >
           <div className="contact-me">
             <p>{contact.contato}</p>
           </div>
@@ -30,7 +45,6 @@ export const Contact = ({ contact }: ContactProps) => {
                 <RichText content={contact.entreContato.raw} />
                 <div className="contact-schedule-now">
                   <span>{contact.agendeContato}</span>
-
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 448 512"
@@ -43,7 +57,7 @@ export const Contact = ({ contact }: ContactProps) => {
               </div>
             </div>
           </Link>
-        </div>
+        </motion.div>
       </div>
     </section>
   )

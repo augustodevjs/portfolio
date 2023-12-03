@@ -3,6 +3,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 import { HeaderProps } from '../types'
 import { CmsIcon } from '../cms-icon/cms-icon'
 import { LinkItems, extractNameFile } from '@/utils'
@@ -33,17 +34,19 @@ export const Header = ({ header, home }: HeaderProps) => {
     <header>
       <div className="container header">
         <div className="nav-bar">
-          <Link href="/" className="logo" data-anime="top">
-            <Image
-              src={header.profile.url}
-              width={header.profile.width}
-              height={header.profile.height}
-              alt={extractNameFile(header.profile.fileName)}
-            />
-            <p>jaugusto</p>
-          </Link>
+          <motion.div initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
+            <Link href="/" className="logo">
+              <Image
+                src={header.profile.url}
+                width={header.profile.width}
+                height={header.profile.height}
+                alt={extractNameFile(header.profile.fileName)}
+              />
+              <p>jaugusto</p>
+            </Link>
+          </motion.div>
 
-          <div className="menu-right" data-anime="top">
+          <motion.div initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="menu-right">
             <nav>
               <ul>
                 {LinkItems.map((item, index) => (
@@ -58,7 +61,7 @@ export const Header = ({ header, home }: HeaderProps) => {
                 />
               </svg>
             </div>
-          </div>
+          </motion.div>
 
           <div className={`menu ${isMobile ? 'mobile-navbar' : ''}`}>
             <div className="menu-navbar">
