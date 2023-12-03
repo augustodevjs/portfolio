@@ -34,7 +34,7 @@ export const Header = ({ header, home }: HeaderProps) => {
     <header>
       <div className="container header">
         <div className="nav-bar">
-          <motion.div initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
+          <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
             <Link href="/" className="logo">
               <Image
                 src={header.profile.url}
@@ -46,7 +46,7 @@ export const Header = ({ header, home }: HeaderProps) => {
             </Link>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, y: -20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="menu-right">
+          <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="menu-right">
             <nav>
               <ul>
                 {LinkItems.map((item, index) => (

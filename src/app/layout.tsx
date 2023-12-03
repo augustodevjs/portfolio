@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import { HeaderService, FooterService, HomeService } from '@/services'
-
 import { Poppins } from 'next/font/google'
+
 import { Footer, Header } from '@/components'
+import { HeaderService, FooterService, HomeService } from '@/services'
 
 import '../styles/global.css'
 
@@ -25,7 +25,6 @@ export default async function RootLayout({
   const { home } = await HomeService()
   const { values: HeaderValues } = await HeaderService();
   const { values: FooterValues } = await FooterService();
-
 
   return (
     <html lang="en">

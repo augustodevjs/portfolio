@@ -1,9 +1,9 @@
 'use client'
 
 import Link from 'next/link';
+import { motion } from 'framer-motion';
 import { ContactProps } from '../types';
 import { RichText } from "@graphcms/rich-text-react-renderer";
-import { motion } from 'framer-motion';
 
 import './styles.css'
 
@@ -28,8 +28,9 @@ export const Contact = ({ contact }: ContactProps) => {
           </motion.p>
         </div>
 
-        <motion.div initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
+        <motion.div
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }} className="contact-content" >
           <div className="contact-me">
             <p>{contact.contato}</p>
