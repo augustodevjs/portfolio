@@ -138,13 +138,13 @@ header .container .nav-bar .menu .menu-navbar .social-media {
   font-weight: 400;
 }
 
+.menu-right nav ul li a.active {
+  color: rgb(45 212 191/1) !important;
+}
+
 .menu-right nav ul li {
   position: relative;
   transition: 0.3s color;
-}
-
-.menu-right nav ul li.active {
-  color: rgb(45 212 191/1) !important;
 }
 
 .menu-right nav ul li:hover {
