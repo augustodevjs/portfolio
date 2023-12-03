@@ -18,7 +18,7 @@ export const ProjetoService = async (): Promise<ProjetoHygraph> => {
             url
             fileName
           }
-          technologies {
+          technologies(first: 30) {
             name
           }
           links {
