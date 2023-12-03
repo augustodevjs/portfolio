@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { HeaderService, FooterService } from '@/services'
+import { HeaderService, FooterService, HomeService } from '@/services'
 
 import { Poppins } from 'next/font/google'
 import { Footer, Header } from '@/components'
@@ -22,14 +22,16 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const { home } = await HomeService()
   const { values: HeaderValues } = await HeaderService();
   const { values: FooterValues } = await FooterService();
+
 
   return (
     <html lang="en">
       <body className={poppins.className}>
         <main className="container">
-          <Header header={HeaderValues} />
+          <Header header={HeaderValues} home={home} />
           {children}
           <Footer footer={FooterValues} />
         </main>

@@ -8,6 +8,7 @@ export type CmsIconProps = {
 
 export type HeaderProps = {
   header: ProfilePicture
+  home: HomePage
 }
 
 export type InfoProps = {
@@ -17,6 +18,7 @@ export type InfoProps = {
 export type ItemsLinkProps = {
   label: string
   href: string
+  closeMenuMobile?: () => void
 }
 
 export type RichTextProps = ComponentProps<typeof CMSRichText>

@@ -337,6 +337,7 @@ header .container .nav-bar .menu .menu-navbar .social-media {
     width: 22px;
     height: 22px;
     transition: 0.3s fill;
+    fill: #a1a1aa !important;
   }
 
   .mobile-navbar .menu-mobile-hamburguer .menu-icons a svg:hover {
