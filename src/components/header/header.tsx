@@ -2,24 +2,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { ItemsLink } from '..'
 import { HeaderProps } from '../types'
-import { extractNameFile } from '@/utils'
+import { LinkItems, extractNameFile } from '@/utils'
 
 import './styles.css'
-
-const NAV_ITEMS = [
-  {
-    label: 'Home',
-    href: '/'
-  },
-  {
-    label: 'Projetos',
-    href: '/projetos'
-  },
-  {
-    label: 'Contato',
-    href: '/contato'
-  }
-]
 
 export const Header = ({ header }: HeaderProps) => {
   return (
@@ -39,7 +24,7 @@ export const Header = ({ header }: HeaderProps) => {
           <div className="menu-right" data-anime="top">
             <nav>
               <ul>
-                {NAV_ITEMS.map((item, index) => (
+                {LinkItems.map((item, index) => (
                   <ItemsLink {...item} key={index} />
                 ))}
               </ul>
@@ -79,7 +64,7 @@ export const Header = ({ header }: HeaderProps) => {
 
               <div className="menu-mobile-hamburguer">
                 <ul className="menu-mobile-header">
-                  {NAV_ITEMS.map((item, index) => (
+                  {LinkItems.map((item, index) => (
                     <ItemsLink {...item} key={index} />
                   ))}
                 </ul>

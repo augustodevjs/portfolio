@@ -1,23 +1,9 @@
 
 import { ItemsLink } from '..'
+import { LinkItems } from '@/utils'
 import { FooterProps } from '../types'
 
 import './styles.css'
-
-const NAV_ITEMS = [
-  {
-    label: 'Home',
-    href: '/'
-  },
-  {
-    label: 'Projetos',
-    href: '/projetos'
-  },
-  {
-    label: 'Contato',
-    href: '/contato'
-  }
-]
 
 export const Footer = ({ footer }: FooterProps) => {
   return (
@@ -25,7 +11,7 @@ export const Footer = ({ footer }: FooterProps) => {
       <div className="container-footer">
         <nav>
           <ul>
-            {NAV_ITEMS.map((item, index) => (
+            {LinkItems.map((item, index) => (
               <ItemsLink {...item} key={index} />
             ))}
           </ul>

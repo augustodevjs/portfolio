@@ -1,6 +1,6 @@
 import { ComponentProps } from "react";
-import { ContatoPage, ProfilePicture, HomePage, FooterContent } from "@/models";
 import { RichText as CMSRichText } from "@graphcms/rich-text-react-renderer"
+import { ContatoPage, ProfilePicture, HomePage, FooterContent, ProjectPage } from "@/models";
 
 export type CmsIconProps = {
   icon: string;
@@ -39,4 +39,8 @@ export type CoursesProps = {
 
 export type RecentProjectsProps = {
   recentProjects: HomePage
+}
+
+export type ProjectsProps = {
+  project: ProjectPage
 }

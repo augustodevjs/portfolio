@@ -1,7 +1,10 @@
 import { Projects } from "@/components";
+import { ProjetoService } from "@/services";
 
-export default function Page() {
+export default async function Page() {
+  const { project: ProjetoPage } = await ProjetoService();
+
   return (
-    <Projects />
+    <Projects project={ProjetoPage} />
   )
 } 

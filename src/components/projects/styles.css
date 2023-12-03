@@ -138,6 +138,12 @@
   background-color: rgb(39 39 42/1)
 }
 
+.project .container-project .project-content .all-projects .project-card .content-project .links .github-link div:first-child,
+.project .container-project .project-content .all-projects .project-card .content-project .links .project-online div:first-child {
+  fill: white;
+  display: flex;
+  align-items: center;
+}
 
 .project .container-project .project-content .all-projects .project-card .content-project .links .github-link svg,
 .project .container-project .project-content .all-projects .project-card .content-project .links .project-online svg {
