@@ -21,12 +21,13 @@
 
 .experience .container-experience .experience-content {
   display: grid;
-  grid-template-columns: 150px 1fr;
+  grid-template-columns: 20px 150px 1fr;
 }
 
-.experience .container-experience .experience-content {
-  border-left: 1px solid rgba(63, 63, 70, .4);
-  padding-left: 2rem;
+.experience .container-experience .experience-content .border {
+  width: 1px;
+  height: 100%;
+  background-color: rgba(63, 63, 70, .4);
 }
 
 .experience .container-experience .experience-content .experience-journey p {
@@ -71,6 +72,10 @@
   .experience {
     padding: 4rem 3rem 0 3rem;
   }
+
+  .experience .container-experience .experience-content .experience-content-info .experience-info ul li {
+    width: 100%;
+  }
 }
 
 @media(max-width: 950px) {
@@ -81,7 +86,7 @@
 
 @media(max-width: 750px) {
   .experience .container-experience .experience-content {
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 20px 100px 1fr;
   }
 }
 

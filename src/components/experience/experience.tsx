@@ -30,15 +30,34 @@ export const Experience = ({ experience }: ExperienceProps) => {
         </div>
 
         <div className="experience-content">
-          <div className="experience-journey" >
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -30 }}
+            transition={{ duration: 0.5 }}
+            className="border"
+          />
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -30 }}
+            transition={{ duration: 0.5 }}
+            className="experience-journey"
+          >
             <p>{experience.experienceProfessional.trajetoria}</p>
-          </div>
+          </motion.div>
 
           <div className="experience-content-info">
             {experience.experienceProfessional.experience.map((experience, index) => (
-              <div key={index} className="experience-info">
+              <motion.div
+                initial={{ opacity: 0, x: -30 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -30 }}
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                key={index} className="experience-info"
+              >
                 <RichText content={experience.raw} />
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
