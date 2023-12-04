@@ -5,8 +5,9 @@ const nextConfig = {
       {
         protocol: 'https',
         hostname: 'media.graphassets.com',
-      }
-    ]
+      },
+    ],
+    dangerouslyAllowSVG: true
   },
 };
 
