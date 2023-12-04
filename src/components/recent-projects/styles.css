@@ -30,21 +30,32 @@
 .recent-projects .recent-projects-container .recent-projects-content .recent-project-card {
   display: flex;
   gap: 2rem;
-  border-bottom: 1px solid rgba(115, 115, 121, 0.4);
   padding: 3rem 0;
 }
 
-.recent-projects .recent-projects-container .recent-projects-content .recent-project-card img {
+.recent-projects .recent-projects-container .recent-projects-content .border {
+  border-bottom: 1px solid rgba(115, 115, 121, 0.4);
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card div {
   max-width: 100%;
   width: 470px;
   height: 300px;
   border-radius: 5px;
   object-fit: cover;
   cursor: pointer;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card div:first-child img {
+  max-width: 100%;
+  width: 470px;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
   transition: 0.3s transform;
 }
 
-.recent-projects .recent-projects-container .recent-projects-content .recent-project-card img:hover {
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card div:first-child img:hover {
   transform: scale(1.025);
 }
 
@@ -122,15 +133,35 @@
     flex-direction: column;
   }
 
-  .recent-projects .recent-projects-container .recent-projects-content .recent-project-card img {
+  .recent-projects .recent-projects-container .recent-projects-content .recent-project-card div:first-child {
+    width: 100%;
+    height: 400px;
+  }
+
+  .recent-projects .recent-projects-container .recent-projects-content .recent-project-card div:first-child img {
     width: 100%;
     height: 400px;
     object-position: top;
   }
+
+  .recent-projects .recent-projects-container .recent-projects-content .recent-project-card .content-project {
+    width: 100%;
+  }
+
+  .recent-projects .recent-projects-container .recent-projects-content .recent-project-card .content-project .stacks {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .recent-projects .recent-projects-container .recent-projects-content .recent-project-card div {
+    height: fit-content;
+  }
 }
 
 @media(max-width: 700px) {
-  .recent-projects .recent-projects-container .recent-projects-content .recent-project-card img {
+
+  .recent-projects .recent-projects-container .recent-projects-content .recent-project-card div:first-child img,
+  .recent-projects .recent-projects-container .recent-projects-content .recent-project-card div:first-child {
     height: 100%;
   }
 }
