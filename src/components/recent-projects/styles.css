@@ -1,0 +1,167 @@
+.recent-projects {
+  padding: 5rem 8rem 0 8rem;
+}
+
+.recent-projects .recent-projects-container .header-projects {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(146, 146, 150, 0.4);
+  width: 100%;
+}
+
+.recent-projects .recent-projects-container .header-projects h2 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.recent-projects .recent-projects-container .header-projects p {
+  font-size: 1.25rem;
+  color: #a1a1aa;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card {
+  display: flex;
+  gap: 2rem;
+  padding: 3rem 0;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .border {
+  border-bottom: 1px solid rgba(115, 115, 121, 0.4);
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card div {
+  max-width: 100%;
+  width: 470px;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card div:first-child img {
+  max-width: 100%;
+  width: 470px;
+  height: 300px;
+  border-radius: 5px;
+  object-fit: cover;
+  transition: 0.3s transform;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card div:first-child img:hover {
+  transform: scale(1.025);
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card .content-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card .content-project h3 {
+  font-size: 2.25rem;
+  color: #ede7e7;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card .content-project p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #a1a1aa;
+  margin-bottom: 1.75rem;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card .content-project .stacks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card .content-project .stacks span {
+  font-size: 1.2rem;
+  color: rgb(44, 206, 185);
+  padding: 0.5rem;
+  background-color: rgb(26, 64, 59);
+  border-radius: 0.5rem;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card .content-project a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.25rem;
+  cursor: pointer;
+  gap: 0.85rem;
+  transition: 0.3s color;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card .content-project a svg {
+  fill: #fff;
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card .content-project a:hover,
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card .content-project a:hover svg {
+  fill: rgb(45 212 191/1);
+  color: rgb(45 212 191/1);
+}
+
+.recent-projects .recent-projects-container .recent-projects-content .recent-project-card .content-project a svg {
+  width: 10px;
+}
+
+.recent-projects .recent-project-card .content-project .content-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+@media(max-width: 1215px) {
+  .recent-projects {
+    padding: 4rem 3rem 0 3rem;
+  }
+}
+
+@media(max-width: 990px) {
+  .recent-projects .recent-projects-container .recent-projects-content .recent-project-card {
+    flex-direction: column;
+  }
+
+  .recent-projects .recent-projects-container .recent-projects-content .recent-project-card div:first-child {
+    width: 100%;
+    height: 400px;
+  }
+
+  .recent-projects .recent-projects-container .recent-projects-content .recent-project-card div:first-child img {
+    width: 100%;
+    height: 400px;
+    object-position: top;
+  }
+
+  .recent-projects .recent-projects-container .recent-projects-content .recent-project-card .content-project {
+    width: 100%;
+  }
+
+  .recent-projects .recent-projects-container .recent-projects-content .recent-project-card .content-project .stacks {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .recent-projects .recent-projects-container .recent-projects-content .recent-project-card div {
+    height: fit-content;
+  }
+}
+
+@media(max-width: 700px) {
+
+  .recent-projects .recent-projects-container .recent-projects-content .recent-project-card div:first-child img,
+  .recent-projects .recent-projects-container .recent-projects-content .recent-project-card div:first-child {
+    height: 100%;
+  }
+}
