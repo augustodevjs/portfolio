@@ -1,3 +1,6 @@
+'use client'
+
+import { motion } from 'framer-motion';
 import { ExperienceProps } from '../types';
 import { RichText } from "@graphcms/rich-text-react-renderer";
 
@@ -8,20 +11,32 @@ export const Experience = ({ experience }: ExperienceProps) => {
     <section className="experience">
       <div className="container-experience">
         <div className="experience-introduce">
-          <h2 data-anime="top">{experience.experienceProfessional.titleExperience}</h2>
-          <p data-anime="top">
+          <motion.h2
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -30 }}
+            transition={{ duration: 0.5 }}
+          >
+            {experience.experienceProfessional.titleExperience}
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -30 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+          >
             {experience.experienceProfessional.apresentationJob}
-          </p>
+          </motion.p>
         </div>
 
         <div className="experience-content">
-          <div className="experience-journey" data-anime="top">
+          <div className="experience-journey" >
             <p>{experience.experienceProfessional.trajetoria}</p>
           </div>
 
           <div className="experience-content-info">
             {experience.experienceProfessional.experience.map((experience, index) => (
-              <div key={index} className="experience-info" data-anime="left">
+              <div key={index} className="experience-info">
                 <RichText content={experience.raw} />
               </div>
             ))}

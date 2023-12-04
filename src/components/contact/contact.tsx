@@ -8,20 +8,23 @@ import { RichText } from "@graphcms/rich-text-react-renderer";
 import './styles.css'
 
 export const Contact = ({ contact }: ContactProps) => {
+  const animeProps = {
+    initial: { opacity: 0, x: -30 },
+    animate: { opacity: 1, x: 0 },
+  }
+
   return (
     <section className="contact">
       <div className="container-contact">
         <div className="contact-introduce" data-anime="left">
           <motion.h2
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            {...animeProps}
             transition={{ duration: 0.5 }}
           >
             {contact.titleContato}
           </motion.h2>
           <motion.p
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            {...animeProps}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             {contact.introductionDescriptionContato}
@@ -29,8 +32,7 @@ export const Contact = ({ contact }: ContactProps) => {
         </div>
 
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          {...animeProps}
           transition={{ duration: 0.5, delay: 0.4 }} className="contact-content" >
           <div className="contact-me">
             <p>{contact.contato}</p>

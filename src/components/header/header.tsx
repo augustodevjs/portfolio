@@ -30,11 +30,19 @@ export const Header = ({ header, home }: HeaderProps) => {
     toggleBodyScroll(false);
   };
 
+  const animeProps = {
+    initial: { opacity: 0, y: -20 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.5 }
+  }
+
   return (
     <header>
       <div className="container header">
         <div className="nav-bar">
-          <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }}>
+          <motion.div
+            {...animeProps}
+          >
             <Link href="/" className="logo">
               <Image
                 src={header.profile.url}
@@ -46,7 +54,10 @@ export const Header = ({ header, home }: HeaderProps) => {
             </Link>
           </motion.div>
 
-          <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.3 }} className="menu-right">
+          <motion.div
+            {...animeProps}
+            className="menu-right"
+          >
             <nav>
               <ul>
                 {LinkItems.map((item, index) => (
