@@ -16,52 +16,95 @@ export const Projects = ({ project }: ProjectsProps) => {
       <div className="container-project">
         <div className="project-introduce">
           <motion.h2
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -30 }}
             transition={{ duration: 0.5 }}
           >
             {project.title}
           </motion.h2>
           <motion.p
-            initial={{ opacity: 0, x: -20 }}
+            initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -30 }}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             {project.description}
           </motion.p>
         </div>
 
-        <motion.div
-          className="project-content"
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-        >
-          <div className="project-me">
+        <div className="project-content">
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -30 }}
+            transition={{ duration: 0.5 }}
+            className="border"
+          />
+          <motion.div
+            initial={{ opacity: 0, x: -30 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -30 }}
+            transition={{ duration: 0.5 }}
+            className="project-me"
+          >
             <p>{project.projetos}</p>
-          </div>
+          </motion.div>
 
           <div className="all-projects">
             {project.projectPersonals.map((project, index) => (
               <div className="project-card" key={index}>
-                <Image
-                  src={project.imageProject.url}
-                  width={project.imageProject.width}
-                  height={project.imageProject.height}
-                  alt={extractNameFile(project.imageProject.fileName)}
-                  onClick={() => window.open(project.urlImage)}
-                />
+                <motion.div
+                  initial={{ opacity: 0, x: -30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -30 }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <Image
+                    src={project.imageProject.url}
+                    width={project.imageProject.width}
+                    height={project.imageProject.height}
+                    alt={extractNameFile(project.imageProject.fileName)}
+                    onClick={() => window.open(project.urlImage)}
+                  />
+                </motion.div>
                 <div className="content-project">
-                  <h3>{project.title}</h3>
-                  <p>{project.description}</p>
+                  <motion.h3
+                    initial={{ opacity: 0, x: -30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -30 }}
+                    transition={{ duration: 0.5, delay: 0.2 }}
+                  >
+                    {project.title}
+                  </motion.h3>
+                  <motion.p
+                    initial={{ opacity: 0, x: -30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -30 }}
+                    transition={{ duration: 0.5, delay: 0.3 }}
+                  >{project.description}</motion.p>
 
                   <div className="stacks">
                     {project.technologies.map((tech, index) => (
-                      <span key={index}>{tech.name}</span>
+                      <motion.span
+                        initial={{ opacity: 0, x: -30 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: -30 }}
+                        transition={{ duration: 0.3, delay: index * 0.05 }}
+                        key={index}
+                      >
+                        {tech.name}
+                      </motion.span>
                     ))}
                   </div>
 
-                  <div className="links">
+                  <motion.div
+                    className="links"
+                    initial={{ opacity: 0, x: -30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    exit={{ opacity: 0, x: -30 }}
+                    transition={{ duration: 0.5, delay: 0.5 }}
+                  >
                     {project.links.map((link, index) => (
                       <Link
                         key={index}
@@ -75,12 +118,12 @@ export const Projects = ({ project }: ProjectsProps) => {
                         </div>
                       </Link>
                     ))}
-                  </div>
+                  </motion.div>
                 </div>
               </div>
             ))}
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   )

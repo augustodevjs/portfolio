@@ -22,13 +22,13 @@
 
 .project .container-project .project-content {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 20px 200px 1fr;
 }
 
-.project .container-project .project-content {
-  border-left: 1px solid rgba(63, 63, 70, .4);
-  padding-left: 2rem;
-  margin-top: 8rem;
+.project .container-project .project-content .border {
+  width: 1px;
+  height: 100%;
+  background-color: rgba(63, 63, 70, .4);
 }
 
 .project .container-project .project-content .project-me p {
@@ -50,6 +50,7 @@
   border-bottom: 1px solid rgba(115, 115, 121, 0.4);
   padding: 3rem 0;
 }
+
 
 .project .container-project .project-content .all-projects .project-card:first-child {
   padding-top: 0;
@@ -167,13 +168,13 @@
 
 @media(max-width: 990px) {
   .project .container-project .project-content {
-    grid-template-columns: 150px 1fr;
+    grid-template-columns: 20px 150px 1fr;
   }
 }
 
 @media(max-width: 930px) {
   .project .container-project .project-content {
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 20px 100px 1fr;
   }
 }
 
