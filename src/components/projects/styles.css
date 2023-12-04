@@ -83,7 +83,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .project .container-project .project-content .all-projects .project-card .content-project h3 {
@@ -135,7 +135,6 @@
 
 .project .container-project .project-content .all-projects .project-card .content-project .links .github-link:hover,
 .project .container-project .project-content .all-projects .project-card .content-project .links .project-online:hover {
-
   background-color: rgb(39 39 42/1)
 }
 
