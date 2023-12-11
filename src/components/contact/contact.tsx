@@ -6,7 +6,6 @@ import { ContactProps } from '../types';
 import { RichText } from "@graphcms/rich-text-react-renderer";
 
 import './styles.css'
-import { Metadata } from 'next';
 
 export const Contact = ({ contact }: ContactProps) => {
   const animeProps = {

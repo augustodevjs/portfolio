@@ -1,5 +1,6 @@
 'use client';
 
+import React from "react";
 import Link from "next/link"
 import Image from "next/image"
 import { motion } from "framer-motion";
@@ -24,8 +25,8 @@ export const RecentProjects = ({ recentProjects }: RecentProjectsProps) => {
 
         <div className="recent-projects-content">
           {recentProjects.recentProjects.map((project, index) => (
-            <>
-              <div className="recent-project-card" key={index}>
+            <React.Fragment key={index}>
+              <div className="recent-project-card">
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
@@ -33,6 +34,7 @@ export const RecentProjects = ({ recentProjects }: RecentProjectsProps) => {
                   transition={{ duration: 0.5 }}
                 >
                   <Image
+                    priority
                     src={project.image.url}
                     width={project.image.width}
                     height={project.image.height}
@@ -82,7 +84,8 @@ export const RecentProjects = ({ recentProjects }: RecentProjectsProps) => {
                     <Link
                       target="_blank"
                       href={project.url}
-                    >{project.showProject}
+                    >
+                      {project.showProject}
                       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                         <path
                           d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
@@ -99,7 +102,7 @@ export const RecentProjects = ({ recentProjects }: RecentProjectsProps) => {
                 exit={{ opacity: 0, x: -30 }}
                 transition={{ duration: 0.5 }}
               />
-            </>
+            </React.Fragment>
           ))}
         </div>
       </div>

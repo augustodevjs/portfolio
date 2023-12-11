@@ -61,6 +61,7 @@ export const Projects = ({ project }: ProjectsProps) => {
                   transition={{ duration: 0.5 }}
                 >
                   <Image
+                    priority
                     src={project.imageProject.url}
                     width={project.imageProject.width}
                     height={project.imageProject.height}

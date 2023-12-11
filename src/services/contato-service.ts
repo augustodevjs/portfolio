@@ -4,7 +4,7 @@ import { fetchHygraphQuery } from "@/utils";
 export const ContatoService = async (): Promise<ContatoHygraph> => {
   const query = `
     query ContatoPage {
-      contato(where: {slug: "contato"}) {
+      contato(where: {slug: "pt"}) {
         titleContato
         introductionDescriptionContato
         contatoLink
@@ -19,6 +19,6 @@ export const ContatoService = async (): Promise<ContatoHygraph> => {
 
   return fetchHygraphQuery(
     query,
-    60 * 60 * 24
+    60
   )
 }
