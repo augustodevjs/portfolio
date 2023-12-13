@@ -64,6 +64,6 @@ export const HomeService = async (): Promise<HomeHyGrahp> => {
 
   return fetchHygraphQuery(
     query,
-    60 * 60 * 24
+    60
   )
 }

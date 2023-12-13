@@ -34,6 +34,6 @@ export const ProjetoService = async (): Promise<ProjetoHygraph> => {
 
   return fetchHygraphQuery(
     query,
-    60 * 60 * 24
+    60
   )
 }

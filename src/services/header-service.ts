@@ -17,6 +17,6 @@ export const HeaderService = async (): Promise<HeaderHygraph> => {
 
   return fetchHygraphQuery(
     query,
-    60 * 60 * 24
+    60
   )
 }
