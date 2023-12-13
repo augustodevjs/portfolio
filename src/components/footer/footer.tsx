@@ -1,4 +1,3 @@
-
 import { LinkItems } from '@/utils'
 import { FooterProps } from '../types'
 import { ItemsLink } from '../items-link/items-link'
