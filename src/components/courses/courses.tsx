@@ -32,7 +32,7 @@ export const Courses = ({ courses }: CoursesProps) => {
                 src={course.certificate.url}
                 width={course.certificate.width}
                 height={course.certificate.height}
-                onClick={() => window.open(course.certificate.url)}
+                onClick={() => window.open(course.url)}
                 alt={extractNameFile(course.certificate.fileName)}
               />
             </motion.div>
