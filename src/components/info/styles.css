@@ -103,6 +103,12 @@
   }
 }
 
+@media(max-width: 530px) {
+  .info .container-info .text-info-me h1 {
+    font-size: 2.5rem;
+  }
+}
+
 @media(max-width: 505px) {
   .info .container-info {
     margin-top: 0rem !important;
