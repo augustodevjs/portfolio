@@ -99,27 +99,33 @@ export const Projects = ({ project }: ProjectsProps) => {
                     ))}
                   </div>
 
-                  <motion.div
-                    className="links"
-                    initial={{ opacity: 0, x: -30 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -30 }}
-                    transition={{ duration: 0.5, delay: 0.5 }}
-                  >
+                  <div className="links">
                     {project.links.map((link, index) => (
-                      <Link
+                      <motion.div
                         key={index}
-                        href={link.url}
-                        className={link.className}
-                        target="_blank"
+                        initial={{ opacity: 0, x: -30 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: -30 }}
+                        transition={{
+                          duration: 0.5,
+                          delay: index * 0.2,
+                          ease: "easeOut"
+                        }}
                       >
-                        <CmsIcon icon={link.svgIcon} />
-                        <div className="name">
-                          {link.name}
-                        </div>
-                      </Link>
+                        <Link
+                          key={index}
+                          href={link.url}
+                          className={link.className}
+                          target="_blank"
+                        >
+                          <CmsIcon icon={link.svgIcon} />
+                          <div className="name">
+                            {link.name}
+                          </div>
+                        </Link>
+                      </motion.div>
                     ))}
-                  </motion.div>
+                  </div>
                 </div>
               </div>
             ))}
