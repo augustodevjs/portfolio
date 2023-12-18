@@ -60,6 +60,8 @@
 }
 
 .recent-projects .recent-projects-container .recent-projects-content .recent-project-card .content-project {
+  padding-top: 2rem;
+  flex: 1;
   cursor: auto;
   display: flex;
   flex-direction: column;
@@ -79,6 +81,7 @@
 }
 
 .recent-projects .recent-projects-container .recent-projects-content .recent-project-card .content-project .stacks {
+  width: 100%;
   cursor: auto;
   display: flex;
   flex-wrap: wrap;

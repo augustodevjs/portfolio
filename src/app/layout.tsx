@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Poppins } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 
 import { Footer, Header } from '@/components'
@@ -36,6 +37,7 @@ export default async function RootLayout({
           {children}
           <Footer footer={FooterValues} />
           <SpeedInsights />
+          <Analytics />
         </main>
       </body>
     </html>
