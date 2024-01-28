@@ -10,6 +10,8 @@ export const metadata: Metadata = {
 export default async function Page() {
   const { project: ProjetoPage } = await ProjetoService();
 
+  console.log(ProjetoPage)
+
   return (
     <Projects project={ProjetoPage} />
   )
