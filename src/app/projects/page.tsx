@@ -3,15 +3,12 @@ import { Projects } from "@/components";
 import { ProjetoService } from "@/services";
 
 export const metadata: Metadata = {
-  title: 'Projetos | João Augusto',
-  description: 'Aqui você encontra os meu projetos pessoais.',
+  title: 'Projects | João Augusto',
+  description: 'Here you can find my personal projects.',
 }
 
 export default async function Page() {
   const { project: ProjetoPage } = await ProjetoService();
-
-  console.log(ProjetoPage)
-
   return (
     <Projects project={ProjetoPage} />
   )

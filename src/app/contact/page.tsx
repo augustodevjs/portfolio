@@ -3,8 +3,8 @@ import { Contact } from "@/components";
 import { ContatoService } from "@/services";
 
 export const metadata: Metadata = {
-  title: 'Contato | João Augusto',
-  description: 'Entre em contato.',
+  title: 'Contact | João Augusto',
+  description: 'Get in touch.',
 }
 
 export default async function Page() {

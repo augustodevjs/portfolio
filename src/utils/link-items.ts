@@ -4,11 +4,11 @@ export const LinkItems = [
     href: '/'
   },
   {
-    label: 'Projetos',
-    href: '/projetos'
+    label: 'Projects',
+    href: '/projects'
   },
   {
-    label: 'Contato',
-    href: '/contato'
+    label: 'Contact',
+    href: '/contact'
   }
 ]

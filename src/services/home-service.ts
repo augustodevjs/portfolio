@@ -4,7 +4,7 @@ import { fetchHygraphQuery } from "@/utils";
 export const HomeService = async (): Promise<HomeHyGrahp> => {
   const query = `
     query HomePage {
-      home(where: {slug: "pt"}) {
+      home(where: {slug: "en"}) {
         introduction {
           raw
         }
