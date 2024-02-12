@@ -1,0 +1,51 @@
+.articles {
+  padding: 7rem 8rem 5.9rem 8rem;
+}
+
+.articles .container-articles .articles-introduce {
+  margin-bottom: 4rem;
+  width: 80ch;
+}
+
+.articles .container-articles .articles-introduce h2 {
+  font-size: 3rem;
+  color: #fff;
+}
+
+.articles .container-articles .articles-introduce p {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  color: #a1a1aa;
+  margin-bottom: 1.75rem;
+  line-height: 2.25rem;
+  width: 75ch;
+}
+
+.articles .container-articles .development {
+  color: #fff;
+  font-size: 1.75rem !important;
+}
+
+@media(max-width: 1215px) {
+  .articles {
+    padding: 7rem 3rem 5.5rem 3rem;
+  }
+}
+
+@media(max-width: 770px) {
+  .articles .container-articles .articles-introduce p {
+    width: 100%;
+  }
+}
+
+@media(max-width: 570px) {
+  .articles .container-articles .articles-introduce {
+    width: 100% !important;
+  }
+}
+
+@media(max-width: 560px) {
+  .articles {
+    padding: 3rem 3rem 5.5rem 3rem;
+  }
+}

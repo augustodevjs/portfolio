@@ -16,7 +16,7 @@ export const Contact = ({ contact }: ContactProps) => {
   return (
     <section className="contact">
       <div className="container-contact">
-        <div className="contact-introduce" data-anime="left">
+        <div className="contact-introduce" >
           <motion.h2
             {...animeProps}
             transition={{ duration: 0.5 }}
