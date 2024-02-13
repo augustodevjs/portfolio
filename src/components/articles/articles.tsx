@@ -1,10 +1,15 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { ArticlePage } from '@/models';
 
 import './styles.css';
 
-export const Articles = () => {
+type ArticlesProps = {
+  article: ArticlePage;
+}
+
+export const Articles = ({ article }: ArticlesProps) => {
   const animeProps = {
     initial: { opacity: 0, x: -30 },
     animate: { opacity: 1, x: 0 },
@@ -18,23 +23,27 @@ export const Articles = () => {
             {...animeProps}
             transition={{ duration: 0.5 }}
           >
-            Insights from My Tech Studies: Backend & DevOps
+            {article.introductionArticle}
           </motion.h2>
           <motion.p
             {...animeProps}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            Journey through Backend and DevOps: Insights from My Software Engineering and Infrastructure Scalability Studies.
+            {article.description}
           </motion.p>
         </div>
-        <motion.h2
-          className='development'
-          initial={{ opacity: 0, x: -30 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-        >
-          🚧 In development...
-        </motion.h2>
+        {article.article.length === 0 ? (
+          <motion.h2
+            className='development'
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
+          >
+            🚧 In development...
+          </motion.h2>
+        ) : (
+          <div></div>
+        )}
       </div>
     </section >
   )
