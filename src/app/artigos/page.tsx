@@ -3,8 +3,8 @@ import { Articles } from "@/components";
 import { ArticleService } from "@/services";
 
 export const metadata: Metadata = {
-  title: 'Articles | João Augusto',
-  description: 'Read my articles about studies and tech.',
+  title: 'Artigos | João Augusto',
+  description: 'Leia meus artigos sobre tecnologia',
 }
 
 export default async function Page() {

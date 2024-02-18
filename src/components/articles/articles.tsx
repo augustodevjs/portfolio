@@ -39,7 +39,7 @@ export const Articles = ({ article }: ArticlesProps) => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
           >
-            🚧 In development...
+            🚧 Em desenvolvimento...
           </motion.h2>
         ) : (
           <div></div>

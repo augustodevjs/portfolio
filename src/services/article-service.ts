@@ -4,7 +4,7 @@ import { fetchHygraphQuery } from "@/utils";
 export const ArticleService = async (): Promise<ArticleHypgrah> => {
   const query = `
     query ArticlePage {
-      article(where: {slug: "en"}) {
+      article(where: {slug: "pt"}) {
         introductionArticle
         description
         article {

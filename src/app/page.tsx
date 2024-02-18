@@ -4,7 +4,7 @@ import { Courses, Experience, Info, RecentProjects } from "@/components";
 
 export const metadata: Metadata = {
   title: 'João Augusto',
-  description: 'I am João Augusto, a seasoned Full Stack developer with expertise in .NET and React.',
+  description: 'Meu nome é João Augusto, um desenvolvedor Full Stack experiente, com habilidades sólidas em .NET e React.',
 }
 
 export default async function Page() {

@@ -159,6 +159,12 @@
   transition: 0.3s all;
 }
 
+.project .container-project .project-content .all-projects .button-block {
+  width: 700px;
+  display: flex;
+  justify-content: center;
+}
+
 @media(max-width: 1215px) {
   .project {
     padding: 7rem 3rem 5.9rem 3rem

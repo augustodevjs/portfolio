@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 const poppins = Poppins({
   subsets: ['devanagari'],
   weight: ['300', '400', '500', '600', '700', '800', '900'],
-  display: 'swap'
+  display: 'block'
 })
 
 export default async function RootLayout({

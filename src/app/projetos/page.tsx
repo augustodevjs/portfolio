@@ -3,8 +3,8 @@ import { Projects } from "@/components";
 import { ProjetoService } from "@/services";
 
 export const metadata: Metadata = {
-  title: 'Projects | João Augusto',
-  description: 'Here you can find my personal projects.',
+  title: 'Projetos | João Augusto',
+  description: 'Aqui você pode encontrar meus projetos pessoais.',
 }
 
 export default async function Page() {

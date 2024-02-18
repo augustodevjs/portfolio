@@ -132,6 +132,7 @@ export const Projects = ({ project }: ProjectsProps) => {
           </div>
         </div>
       </div>
+
     </section>
   )
 }
